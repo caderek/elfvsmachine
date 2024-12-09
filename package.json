@@ -1,0 +1,19 @@
+{
+  "name": "manvsmachine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fetch": "node scripts/fetch.js",
+    "dev": "npx @11ty/eleventy-dev-server --dir=docs"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "jsdom": "^25.0.1"
+  }
+}

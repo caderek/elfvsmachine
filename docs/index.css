@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  color-scheme: dark;
+
+  --font-mono: "Roboto Mono", monospace;
+
+  --space-2xs: 2px;
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-m: 16px;
+  --space-l: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+
+  --font-xs: 0.75rem;
+  --font-s: 0.875rem;
+  --font-m: 1rem;
+  --font-l: 1.25rem;
+  --font-xl: 1.5rem;
+  --font-2xl: 2rem;
+
+  --color-bg-lc: #18141f;
+  --color-bg: #131019;
+  --color-bg-hc: #0c0a10;
+  --color-fg: #beb6d2;
+  --color-fg-hc: #ffffff;
+  --color-fg-lc: #a296bf;
+  --color-fg-ok: #8d63e9;
+  --color-fg-active: #d1fb82;
+  --color-fg-error: #fa431e;
+  --color-fg-accent: #fa1e4e;
+  --color-fg-special: #eb4799;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-mono);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: var(--space-m);
+  line-height: 1.6;
+  background: var(--color-bg);
+  color: var(--color-fg);
+}
+
+h1 {
+  font-size: var(--font-2xl);
+}
+
+h2 {
+  font-size: var(--font-xl);
+  margin: var(--space-m) 0 var(--space-s);
+}
+
+button {
+  padding: var(--space-s);
+  min-width: 2rem;
+  cursor: pointer;
+  border-radius: var(--space-2xs);
+  background: var(--color-fg-ok);
+  color: var(--color-bg-hc);
+  font-weight: 600;
+  font-size: var(--font-s);
+}
+
+button:disabled {
+  cursor: default;
+  background: var(--color-fg-active);
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: var(--space-s) 0;
+}
+
+nav ul {
+}
+
+main li {
+  padding: var(--space-2xs);
+}
+
+main li:first-child {
+  color: var(--color-fg-lc);
+}
+
+main li:nth-child(odd) {
+  background: var(--color-bg-lc);
+}
+
+main li span {
+  display: inline-block;
+}
+
+main li span + span {
+  margin-left: var(--space-s);
+}
+
+.position {
+  width: 4ch;
+  text-align: right;
+}
+
+.points {
+  width: 9ch;
+  text-align: right;
+}
+
+.time {
+  width: 8ch;
+}
+
+a,
+a:visited,
+a:active {
+  color: var(--color-fg-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-fg-accent);
+  text-decoration: underline;
+}
