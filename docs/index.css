@@ -133,3 +133,11 @@ a:hover {
   color: var(--color-fg-accent);
   text-decoration: underline;
 }
+
+footer {
+  font-size: var(--font-s);
+  text-align: center;
+  padding: var(--space-m);
+  margin-top: var(--space-xl);
+  background: var(--color-bg-lc);
+}
