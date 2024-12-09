@@ -9,42 +9,25 @@ function prepareScores(results) {
     return null
   }
 
-  const maxPoints = calculateMedian(results.map((x) => x.time))
-  const minPoints = maxPoints / 100
+  return results
+    .toSorted((a, b) => a.time - b.time)
+    .map((result) => {
+      return [result.userId, result.time]
+    })
+}
 
-  const sorted = results.toSorted((a, b) => a.time - b.time)
-
-  const scored = []
-  let pos = 0
-  let jump = 1
-  let prevTime = -1
-
-  for (const result of sorted) {
-    if (result.time === prevTime) {
-      jump++
-    } else {
-      pos += jump
-      jump = 1
-    }
-
-    scored.push([
-      pos,
-      result.userId,
-      result.time,
-      Number(((results.length - (pos - 1)) * minPoints).toFixed(3)),
-    ])
-
-    prevTime = result.time
-  }
-
-  return scored
+const isExternalLink = (link) => {
+  return link && link.startsWith("http")
 }
 
 function prepareUsers(entries) {
   const users = {}
 
   for (const { userId, user, userLink } of entries) {
-    users[userId] = [user, userLink]
+    users[userId] = [
+      user.replace("(AoC++)", "").replace(" (Sponsor)", "").trim(),
+      isExternalLink(userLink) ? userLink : null,
+    ]
   }
 
   return users
