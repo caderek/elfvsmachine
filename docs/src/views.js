@@ -44,6 +44,7 @@ export const DayView = ({ yearData, day, year, algo }) => {
   return `
     <section class="both-stars">
       <h2>Both Stars on <a href="https://adventofcode.com/${year}/day/${day}">Day ${day}, ${year}</a></h2>
+      <p class="median">Median time: <strong>${secondsToTime(Math.round(data[2].medianTime))}</strong></p>
       <ul>
         <li>
           <span class="position">Pos:</span>
@@ -56,6 +57,7 @@ export const DayView = ({ yearData, day, year, algo }) => {
     </section>
     <section class="first-star">
       <h2>First Star on <a href="https://adventofcode.com/${year}/day/${day}">Day ${day}, ${year}</a></h2>
+      <p class="median">Median time: <strong>${secondsToTime(Math.round(data[1].medianTime))}</strong></p>
       <ul>
         <li>
           <span class="position">Pos:</span>

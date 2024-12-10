@@ -63,7 +63,7 @@ h1 {
 
 h2 {
   font-size: var(--font-l);
-  margin: var(--space-m) 0 var(--space-s);
+  margin: var(--space-l) 0 var(--space-s);
 }
 
 button {
@@ -190,6 +190,15 @@ footer {
 
 .info p + p {
   margin-top: var(--space-m);
+}
+
+.median {
+  color: var(--color-fg-lc);
+  margin-bottom: var(--space-m);
+}
+
+.median strong {
+  font-weight: 400;
 }
 
 @media screen and (max-width: 63.99rem) {
