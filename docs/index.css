@@ -50,11 +50,16 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  padding: var(--space-m);
   font-size: var(--font-m);
   line-height: 1.6;
   background: var(--color-bg);
   color: var(--color-fg);
+}
+
+body > div {
+  padding: var(--space-m);
+  max-width: 80rem;
+  margin: auto;
 }
 
 h1 {
@@ -150,10 +155,12 @@ code {
 .points {
   width: var(--points-w);
   text-align: right;
+  color: var(--color-fg-lc);
 }
 
 .time {
   width: 8ch;
+  color: var(--color-fg-lc);
 }
 
 a,

@@ -48,41 +48,43 @@
     <link href="index.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <h1>Elf vs Machine</h1>
-      <p>
-        Unofficial Leaderboard for
-        <a href="https://adventofcode.com">Advent of Code</a>
-      </p>
-    </header>
-    <section id="info" class="info">
-      <p>
-        The algorithm awards the points
-        <strong>based on the difficulty of the puzzle</strong> and the
-        completion order. I believe it could help mitigate some of the effects
-        of LLM usage, but even if it won't, it's a fun take on the global
-        scores.
-      </p>
-      <p>
-        For example, if the median time for completing the puzzle was
-        <code>300 seconds</code>, then the first place takes
-        <code>300 points</code>, the second place
-        <code>0.99 * 300 = 297 points</code> and so forth, up to the last place
-        with <code>0.01 * 300 = 3 points</code>.
-      </p>
-      <p>
-        Full formula for each star:
-        <code
-          >points = max(1, round((101 - position) / 100 *
-          median_time_in_seconds))</code
-        >
-      </p>
-    </section>
-    <nav>
-      <ul id="years"></ul>
-      <ul id="days"></ul>
-    </nav>
-    <main></main>
+    <div>
+      <header>
+        <h1>Elf vs Machine</h1>
+        <p>
+          Unofficial Leaderboard for
+          <a href="https://adventofcode.com">Advent of Code</a>
+        </p>
+      </header>
+      <section id="info" class="info">
+        <p>
+          The algorithm awards the points
+          <strong>based on the difficulty of the puzzle</strong> and the
+          completion order. I believe it could help mitigate some of the effects
+          of LLM usage, but even if it won't, it's a fun take on the global
+          scores.
+        </p>
+        <p>
+          For example, if the median time for completing the puzzle was
+          <code>300 seconds</code>, then the first place takes
+          <code>300 points</code>, the second place
+          <code>0.99 * 300 = 297 points</code> and so forth, up to the last
+          place with <code>0.01 * 300 = 3 points</code>.
+        </p>
+        <p>
+          Full formula for each star:
+          <code
+            >points = max(1, round((101 - position) / 100 *
+            median_time_in_seconds))</code
+          >
+        </p>
+      </section>
+      <nav>
+        <ul id="years"></ul>
+        <ul id="days"></ul>
+      </nav>
+      <main></main>
+    </div>
     <footer>
       Made with ♥ by <a href="https://caderek.github.io/">Maciej Caderek</a> |
       View the source on
