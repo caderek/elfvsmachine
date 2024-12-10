@@ -3,15 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "fetch": "node scripts/fetch.js",
-    "dev": "npx @11ty/eleventy-dev-server --dir=docs"
+    "dev": "npm run fetch && npx @11ty/eleventy-dev-server --dir=docs"
   },
   "type": "module",
-  "keywords": [],
-  "author": "",
+  "keywords": ["aoc"],
+  "author": "Maciej Caderek",
   "license": "ISC",
-  "description": "",
+  "description": "Unofficial leaderboard for Advent of Code, based on puzzles difficulty",
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "jsdom": "^25.0.1"
