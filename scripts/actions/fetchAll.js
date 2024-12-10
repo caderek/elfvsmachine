@@ -2,6 +2,7 @@ import fs from "node:fs"
 
 import { config } from "../../config.js"
 import { fetchYear } from "./fetchYear.js"
+import { getCurrent } from "./util.js"
 
 export async function fetchAll() {
   const done = fs.existsSync(config.RAW_DATA_DIR)
@@ -23,13 +24,10 @@ export async function fetchAll() {
     doneByYear[year].add(day)
   }
 
-  const now = new Date()
-
-  const options = { year: "numeric", timeZone: "America/New_York" } // UTC-5 as AoC starts
-  const formatter = new Intl.DateTimeFormat("en-US", options)
-  const currentYear = Number(formatter.format(now))
+  const { currentYear, currentDay } = getCurrent()
 
   for (let year = config.START_FROM__YEAR; year <= currentYear; year++) {
-    await fetchYear(year, doneByYear[year] ?? new Set())
+    const maxDay = year === currentYear ? currentDay : 25
+    await fetchYear(year, doneByYear[year] ?? new Set(), maxDay)
   }
 }

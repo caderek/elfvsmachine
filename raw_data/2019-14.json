@@ -1,0 +1,1410 @@
+{
+  "year": 2019,
+  "day": 14,
+  "results": {
+    "1": [
+      {
+        "userId": 213366,
+        "user": "zielmicha",
+        "link": "https://github.com/zielmicha",
+        "place": 1,
+        "time": 433
+      },
+      {
+        "userId": 436445,
+        "user": "nthistle",
+        "link": "https://github.com/nthistle",
+        "place": 2,
+        "time": 498
+      },
+      {
+        "userId": 32289,
+        "user": "betaveros (AoC++)",
+        "link": "https://github.com/betaveros",
+        "place": 3,
+        "time": 553
+      },
+      {
+        "userId": 26414,
+        "user": "mserrano",
+        "link": null,
+        "place": 4,
+        "time": 588
+      },
+      {
+        "userId": 390776,
+        "user": "bradleysigma",
+        "link": null,
+        "place": 5,
+        "time": 603
+      },
+      {
+        "userId": 670534,
+        "user": "Tomas Rokicki",
+        "link": "https://github.com/rokicki",
+        "place": 6,
+        "time": 628
+      },
+      {
+        "userId": 379846,
+        "user": "Nathan Fenner (AoC++)",
+        "link": "https://github.com/Nathan-Fenner",
+        "place": 7,
+        "time": 672
+      },
+      {
+        "userId": 44119,
+        "user": "(anonymous user #44119)",
+        "link": null,
+        "place": 8,
+        "time": 677
+      },
+      {
+        "userId": 528121,
+        "user": "seligman99 (AoC++)",
+        "link": "https://www.reddit.com/u/seligman99",
+        "place": 9,
+        "time": 680
+      },
+      {
+        "userId": 475191,
+        "user": "bluepichu",
+        "link": "https://github.com/bluepichu",
+        "place": 10,
+        "time": 696
+      },
+      {
+        "userId": 20757,
+        "user": "Sophie Alpert (AoC++)",
+        "link": "https://github.com/sophiebits",
+        "place": 11,
+        "time": 724
+      },
+      {
+        "userId": 404885,
+        "user": "penteract (AoC++)",
+        "link": "https://github.com/penteract",
+        "place": 12,
+        "time": 773
+      },
+      {
+        "userId": 409962,
+        "user": "David Wahler (AoC++)",
+        "link": "https://github.com/dwahler",
+        "place": 13,
+        "time": 775
+      },
+      {
+        "userId": 642453,
+        "user": "Jimmy Mårdell (AoC++)",
+        "link": "/2019/support",
+        "place": 14,
+        "time": 808
+      },
+      {
+        "userId": 610124,
+        "user": "ExpHP",
+        "link": "https://github.com/ExpHP",
+        "place": 15,
+        "time": 846
+      },
+      {
+        "userId": 671730,
+        "user": "Anish Singhani (AoC++)",
+        "link": "https://github.com/asinghani",
+        "place": 16,
+        "time": 866
+      },
+      {
+        "userId": 237486,
+        "user": "ZED.Charley William Thairo",
+        "link": null,
+        "place": 17,
+        "time": 875
+      },
+      {
+        "userId": 638005,
+        "user": "sswingle",
+        "link": "https://github.com/sswingle",
+        "place": 18,
+        "time": 877
+      },
+      {
+        "userId": 688160,
+        "user": "leijurv (AoC++)",
+        "link": "https://github.com/leijurv",
+        "place": 19,
+        "time": 901
+      },
+      {
+        "userId": 133354,
+        "user": "Arnavion",
+        "link": "https://github.com/Arnavion",
+        "place": 20,
+        "time": 907
+      },
+      {
+        "userId": 381635,
+        "user": "Ethan Morgan (AoC++)",
+        "link": "/2019/support",
+        "place": 21,
+        "time": 909
+      },
+      {
+        "userId": 725826,
+        "user": "George Hotz (AoC++)",
+        "link": "https://github.com/geohot",
+        "place": 22,
+        "time": 931
+      },
+      {
+        "userId": 681002,
+        "user": "mateoeh",
+        "link": "https://github.com/mateoeh",
+        "place": 23,
+        "time": 958
+      },
+      {
+        "userId": 122283,
+        "user": "Tom Holmes",
+        "link": "https://github.com/tsholmes",
+        "place": 24,
+        "time": 968
+      },
+      {
+        "userId": 59546,
+        "user": "jamie",
+        "link": "https://github.com/jamie",
+        "place": 25,
+        "time": 975
+      },
+      {
+        "userId": 218680,
+        "user": "sparkyb (AoC++)",
+        "link": "https://github.com/sparkyb",
+        "place": 26,
+        "time": 983
+      },
+      {
+        "userId": 436313,
+        "user": "David Kim",
+        "link": null,
+        "place": 27,
+        "time": 983
+      },
+      {
+        "userId": 386588,
+        "user": "RJ Walsh",
+        "link": null,
+        "place": 28,
+        "time": 986
+      },
+      {
+        "userId": 399258,
+        "user": "katrinafyi",
+        "link": "https://github.com/katrinafyi",
+        "place": 29,
+        "time": 1008
+      },
+      {
+        "userId": 204638,
+        "user": "(anonymous user #204638) (AoC++)",
+        "link": "/2019/support",
+        "place": 30,
+        "time": 1016
+      },
+      {
+        "userId": 137936,
+        "user": "drougge (AoC++)",
+        "link": "https://github.com/drougge",
+        "place": 31,
+        "time": 1030
+      },
+      {
+        "userId": 67806,
+        "user": "jonathanpaulson (AoC++)",
+        "link": "https://github.com/jonathanpaulson",
+        "place": 32,
+        "time": 1037
+      },
+      {
+        "userId": 684990,
+        "user": "D. Salgado",
+        "link": null,
+        "place": 33,
+        "time": 1062
+      },
+      {
+        "userId": 152371,
+        "user": "Andreas Hansson",
+        "link": null,
+        "place": 34,
+        "time": 1068
+      },
+      {
+        "userId": 673908,
+        "user": "smrq",
+        "link": "https://github.com/smrq",
+        "place": 35,
+        "time": 1082
+      },
+      {
+        "userId": 396551,
+        "user": "ttalvitie",
+        "link": "https://github.com/ttalvitie",
+        "place": 36,
+        "time": 1098
+      },
+      {
+        "userId": 118243,
+        "user": "Eric Tzeng",
+        "link": null,
+        "place": 37,
+        "time": 1101
+      },
+      {
+        "userId": 226479,
+        "user": "Ryan Norris",
+        "link": "https://github.com/rynorris",
+        "place": 38,
+        "time": 1116
+      },
+      {
+        "userId": 387815,
+        "user": "Richard Clark",
+        "link": null,
+        "place": 39,
+        "time": 1148
+      },
+      {
+        "userId": 11133,
+        "user": "msullivan (AoC++)",
+        "link": "https://github.com/msullivan",
+        "place": 40,
+        "time": 1162
+      },
+      {
+        "userId": 7253,
+        "user": "etotheipi1",
+        "link": null,
+        "place": 41,
+        "time": 1165
+      },
+      {
+        "userId": 107707,
+        "user": "Måns Magnusson",
+        "link": "https://github.com/exoji2e",
+        "place": 42,
+        "time": 1199
+      },
+      {
+        "userId": 824705,
+        "user": "Mathias Bæk Tejs Langhede",
+        "link": null,
+        "place": 43,
+        "time": 1223
+      },
+      {
+        "userId": 5528,
+        "user": "orez-",
+        "link": "https://github.com/orez-",
+        "place": 44,
+        "time": 1229
+      },
+      {
+        "userId": 492493,
+        "user": "Liresol",
+        "link": null,
+        "place": 45,
+        "time": 1240
+      },
+      {
+        "userId": 697054,
+        "user": "Cyprien Mangin",
+        "link": null,
+        "place": 46,
+        "time": 1242
+      },
+      {
+        "userId": 726210,
+        "user": "12Me21",
+        "link": null,
+        "place": 47,
+        "time": 1250
+      },
+      {
+        "userId": 370231,
+        "user": "Matthew Ellsworth",
+        "link": null,
+        "place": 48,
+        "time": 1253
+      },
+      {
+        "userId": 111831,
+        "user": "jebouin (AoC++)",
+        "link": "https://github.com/jebouin",
+        "place": 49,
+        "time": 1264
+      },
+      {
+        "userId": 402840,
+        "user": "Maciej Goszczycki (AoC++)",
+        "link": "https://github.com/nsmaciej",
+        "place": 50,
+        "time": 1266
+      },
+      {
+        "userId": 645723,
+        "user": "m-schm (AoC++)",
+        "link": "https://github.com/m-schm",
+        "place": 51,
+        "time": 1269
+      },
+      {
+        "userId": 157545,
+        "user": "Snild Dolkow",
+        "link": null,
+        "place": 52,
+        "time": 1271
+      },
+      {
+        "userId": 52063,
+        "user": "Tanner Hoke",
+        "link": null,
+        "place": 53,
+        "time": 1279
+      },
+      {
+        "userId": 164393,
+        "user": "kaivanes",
+        "link": "https://github.com/kaivanes",
+        "place": 54,
+        "time": 1282
+      },
+      {
+        "userId": 28933,
+        "user": "Magnus Holm",
+        "link": "https://github.com/judofyr",
+        "place": 55,
+        "time": 1283
+      },
+      {
+        "userId": 117467,
+        "user": "Springo",
+        "link": "https://github.com/Springo",
+        "place": 56,
+        "time": 1283
+      },
+      {
+        "userId": 453034,
+        "user": "Epiphane (AoC++)",
+        "link": "https://github.com/Epiphane",
+        "place": 57,
+        "time": 1304
+      },
+      {
+        "userId": 219649,
+        "user": "Kevin Sun",
+        "link": null,
+        "place": 58,
+        "time": 1312
+      },
+      {
+        "userId": 484659,
+        "user": "Craig Gidney",
+        "link": "https://github.com/Strilanc",
+        "place": 59,
+        "time": 1336
+      },
+      {
+        "userId": 446701,
+        "user": "Tyler Zhang",
+        "link": null,
+        "place": 60,
+        "time": 1339
+      },
+      {
+        "userId": 435163,
+        "user": "jeremyyap",
+        "link": "https://github.com/jeremyyap",
+        "place": 61,
+        "time": 1344
+      },
+      {
+        "userId": 402645,
+        "user": "(anonymous user #402645)",
+        "link": null,
+        "place": 62,
+        "time": 1348
+      },
+      {
+        "userId": 371564,
+        "user": "asottile",
+        "link": "https://github.com/asottile",
+        "place": 63,
+        "time": 1359
+      },
+      {
+        "userId": 379211,
+        "user": "Sahil Kochar",
+        "link": null,
+        "place": 64,
+        "time": 1362
+      },
+      {
+        "userId": 43100,
+        "user": "glguy (AoC++)",
+        "link": "https://github.com/glguy",
+        "place": 65,
+        "time": 1381
+      },
+      {
+        "userId": 627919,
+        "user": "Graham White",
+        "link": null,
+        "place": 66,
+        "time": 1389
+      },
+      {
+        "userId": 676720,
+        "user": "David Hao",
+        "link": null,
+        "place": 67,
+        "time": 1393
+      },
+      {
+        "userId": 198796,
+        "user": "VeeArr (AoC++)",
+        "link": "/2019/support",
+        "place": 68,
+        "time": 1406
+      },
+      {
+        "userId": 423621,
+        "user": "Kroppeb",
+        "link": "https://github.com/Kroppeb",
+        "place": 69,
+        "time": 1407
+      },
+      {
+        "userId": 133207,
+        "user": "Robert Xiao",
+        "link": "https://github.com/nneonneo",
+        "place": 70,
+        "time": 1412
+      },
+      {
+        "userId": 406017,
+        "user": "Erik Szalay",
+        "link": null,
+        "place": 71,
+        "time": 1429
+      },
+      {
+        "userId": 645222,
+        "user": "Joshua Martinez",
+        "link": null,
+        "place": 72,
+        "time": 1443
+      },
+      {
+        "userId": 129611,
+        "user": "Arios16",
+        "link": "https://github.com/Arios16",
+        "place": 73,
+        "time": 1447
+      },
+      {
+        "userId": 312411,
+        "user": "skyhawk33",
+        "link": null,
+        "place": 74,
+        "time": 1461
+      },
+      {
+        "userId": 370839,
+        "user": "Howard",
+        "link": null,
+        "place": 75,
+        "time": 1467
+      },
+      {
+        "userId": 237700,
+        "user": "Ben Mirtchouk",
+        "link": null,
+        "place": 76,
+        "time": 1480
+      },
+      {
+        "userId": 360786,
+        "user": "Winston Ewert",
+        "link": null,
+        "place": 77,
+        "time": 1487
+      },
+      {
+        "userId": 296993,
+        "user": "@GasperRugelj (AoC++)",
+        "link": "/2019/support",
+        "place": 78,
+        "time": 1488
+      },
+      {
+        "userId": 766511,
+        "user": "Javier Marinkovic",
+        "link": null,
+        "place": 79,
+        "time": 1507
+      },
+      {
+        "userId": 388769,
+        "user": "Michelle Yi (AoC++)",
+        "link": "/2019/support",
+        "place": 80,
+        "time": 1508
+      },
+      {
+        "userId": 52463,
+        "user": "markolson",
+        "link": "https://github.com/markolson",
+        "place": 81,
+        "time": 1520
+      },
+      {
+        "userId": 189889,
+        "user": "Leon Loopik",
+        "link": "https://github.com/Lewn",
+        "place": 82,
+        "time": 1521
+      },
+      {
+        "userId": 3397,
+        "user": "Rustywolf",
+        "link": null,
+        "place": 83,
+        "time": 1524
+      },
+      {
+        "userId": 415650,
+        "user": "tckmn",
+        "link": "https://github.com/tckmn",
+        "place": 84,
+        "time": 1533
+      },
+      {
+        "userId": 780025,
+        "user": "aaa chen",
+        "link": null,
+        "place": 85,
+        "time": 1540
+      },
+      {
+        "userId": 375036,
+        "user": "alcatrazEscapee",
+        "link": "https://github.com/alcatrazEscapee",
+        "place": 86,
+        "time": 1548
+      },
+      {
+        "userId": 764791,
+        "user": "Ed j",
+        "link": null,
+        "place": 87,
+        "time": 1550
+      },
+      {
+        "userId": 826427,
+        "user": "jes",
+        "link": "https://github.com/jes",
+        "place": 88,
+        "time": 1559
+      },
+      {
+        "userId": 11083,
+        "user": "gwillen (AoC++)",
+        "link": "https://github.com/gwillen",
+        "place": 89,
+        "time": 1566
+      },
+      {
+        "userId": 388309,
+        "user": "Andrew Litteken",
+        "link": "https://github.com/AndrewLitteken",
+        "place": 90,
+        "time": 1575
+      },
+      {
+        "userId": 746668,
+        "user": "cmears",
+        "link": "https://github.com/cmears",
+        "place": 91,
+        "time": 1592
+      },
+      {
+        "userId": 638564,
+        "user": "hltk",
+        "link": null,
+        "place": 92,
+        "time": 1602
+      },
+      {
+        "userId": 638494,
+        "user": "TheThirdOne",
+        "link": "https://github.com/TheThirdOne",
+        "place": 93,
+        "time": 1623
+      },
+      {
+        "userId": 62993,
+        "user": "Green Lightning (AoC++)",
+        "link": "https://github.com/GreenLightning",
+        "place": 94,
+        "time": 1624
+      },
+      {
+        "userId": 225218,
+        "user": "Jerry Chen",
+        "link": null,
+        "place": 95,
+        "time": 1626
+      },
+      {
+        "userId": 668284,
+        "user": "med200",
+        "link": null,
+        "place": 96,
+        "time": 1641
+      },
+      {
+        "userId": 662958,
+        "user": "Robert Tupelo-Schneck",
+        "link": null,
+        "place": 97,
+        "time": 1642
+      },
+      {
+        "userId": 544607,
+        "user": "fynngodau (AoC++)",
+        "link": "/2019/support",
+        "place": 98,
+        "time": 1645
+      },
+      {
+        "userId": 484627,
+        "user": "MarshallOfSound",
+        "link": "https://github.com/MarshallOfSound",
+        "place": 99,
+        "time": 1655
+      },
+      {
+        "userId": 111306,
+        "user": "(anonymous user #111306)",
+        "link": null,
+        "place": 100,
+        "time": 1655
+      }
+    ],
+    "2": [
+      {
+        "userId": 213366,
+        "user": "zielmicha",
+        "link": "https://github.com/zielmicha",
+        "place": 1,
+        "time": 573
+      },
+      {
+        "userId": 32289,
+        "user": "betaveros (AoC++)",
+        "link": "https://github.com/betaveros",
+        "place": 2,
+        "time": 695
+      },
+      {
+        "userId": 475191,
+        "user": "bluepichu",
+        "link": "https://github.com/bluepichu",
+        "place": 3,
+        "time": 851
+      },
+      {
+        "userId": 379846,
+        "user": "Nathan Fenner (AoC++)",
+        "link": "https://github.com/Nathan-Fenner",
+        "place": 4,
+        "time": 901
+      },
+      {
+        "userId": 26414,
+        "user": "mserrano",
+        "link": null,
+        "place": 5,
+        "time": 905
+      },
+      {
+        "userId": 670534,
+        "user": "Tomas Rokicki",
+        "link": "https://github.com/rokicki",
+        "place": 6,
+        "time": 933
+      },
+      {
+        "userId": 436445,
+        "user": "nthistle",
+        "link": "https://github.com/nthistle",
+        "place": 7,
+        "time": 951
+      },
+      {
+        "userId": 409962,
+        "user": "David Wahler (AoC++)",
+        "link": "https://github.com/dwahler",
+        "place": 8,
+        "time": 983
+      },
+      {
+        "userId": 642453,
+        "user": "Jimmy Mårdell (AoC++)",
+        "link": "/2019/support",
+        "place": 9,
+        "time": 1013
+      },
+      {
+        "userId": 404885,
+        "user": "penteract (AoC++)",
+        "link": "https://github.com/penteract",
+        "place": 10,
+        "time": 1044
+      },
+      {
+        "userId": 688160,
+        "user": "leijurv (AoC++)",
+        "link": "https://github.com/leijurv",
+        "place": 11,
+        "time": 1049
+      },
+      {
+        "userId": 725826,
+        "user": "George Hotz (AoC++)",
+        "link": "https://github.com/geohot",
+        "place": 12,
+        "time": 1083
+      },
+      {
+        "userId": 122283,
+        "user": "Tom Holmes",
+        "link": "https://github.com/tsholmes",
+        "place": 13,
+        "time": 1109
+      },
+      {
+        "userId": 67806,
+        "user": "jonathanpaulson (AoC++)",
+        "link": "https://github.com/jonathanpaulson",
+        "place": 14,
+        "time": 1172
+      },
+      {
+        "userId": 671730,
+        "user": "Anish Singhani (AoC++)",
+        "link": "https://github.com/asinghani",
+        "place": 15,
+        "time": 1224
+      },
+      {
+        "userId": 684990,
+        "user": "D. Salgado",
+        "link": null,
+        "place": 16,
+        "time": 1285
+      },
+      {
+        "userId": 390776,
+        "user": "bradleysigma",
+        "link": null,
+        "place": 17,
+        "time": 1318
+      },
+      {
+        "userId": 20757,
+        "user": "Sophie Alpert (AoC++)",
+        "link": "https://github.com/sophiebits",
+        "place": 18,
+        "time": 1336
+      },
+      {
+        "userId": 237486,
+        "user": "ZED.Charley William Thairo",
+        "link": null,
+        "place": 19,
+        "time": 1342
+      },
+      {
+        "userId": 218680,
+        "user": "sparkyb (AoC++)",
+        "link": "https://github.com/sparkyb",
+        "place": 20,
+        "time": 1344
+      },
+      {
+        "userId": 610124,
+        "user": "ExpHP",
+        "link": "https://github.com/ExpHP",
+        "place": 21,
+        "time": 1412
+      },
+      {
+        "userId": 381635,
+        "user": "Ethan Morgan (AoC++)",
+        "link": "/2019/support",
+        "place": 22,
+        "time": 1430
+      },
+      {
+        "userId": 111831,
+        "user": "jebouin (AoC++)",
+        "link": "https://github.com/jebouin",
+        "place": 23,
+        "time": 1438
+      },
+      {
+        "userId": 7253,
+        "user": "etotheipi1",
+        "link": null,
+        "place": 24,
+        "time": 1454
+      },
+      {
+        "userId": 824705,
+        "user": "Mathias Bæk Tejs Langhede",
+        "link": null,
+        "place": 25,
+        "time": 1455
+      },
+      {
+        "userId": 697054,
+        "user": "Cyprien Mangin",
+        "link": null,
+        "place": 26,
+        "time": 1509
+      },
+      {
+        "userId": 237700,
+        "user": "Ben Mirtchouk",
+        "link": null,
+        "place": 27,
+        "time": 1572
+      },
+      {
+        "userId": 5528,
+        "user": "orez-",
+        "link": "https://github.com/orez-",
+        "place": 28,
+        "time": 1573
+      },
+      {
+        "userId": 645222,
+        "user": "Joshua Martinez",
+        "link": null,
+        "place": 29,
+        "time": 1586
+      },
+      {
+        "userId": 11133,
+        "user": "msullivan (AoC++)",
+        "link": "https://github.com/msullivan",
+        "place": 30,
+        "time": 1605
+      },
+      {
+        "userId": 219649,
+        "user": "Kevin Sun",
+        "link": null,
+        "place": 31,
+        "time": 1608
+      },
+      {
+        "userId": 627919,
+        "user": "Graham White",
+        "link": null,
+        "place": 32,
+        "time": 1619
+      },
+      {
+        "userId": 396551,
+        "user": "ttalvitie",
+        "link": "https://github.com/ttalvitie",
+        "place": 33,
+        "time": 1644
+      },
+      {
+        "userId": 107707,
+        "user": "Måns Magnusson",
+        "link": "https://github.com/exoji2e",
+        "place": 34,
+        "time": 1658
+      },
+      {
+        "userId": 766511,
+        "user": "Javier Marinkovic",
+        "link": null,
+        "place": 35,
+        "time": 1691
+      },
+      {
+        "userId": 484659,
+        "user": "Craig Gidney",
+        "link": "https://github.com/Strilanc",
+        "place": 36,
+        "time": 1691
+      },
+      {
+        "userId": 415650,
+        "user": "tckmn",
+        "link": "https://github.com/tckmn",
+        "place": 37,
+        "time": 1712
+      },
+      {
+        "userId": 453034,
+        "user": "Epiphane (AoC++)",
+        "link": "https://github.com/Epiphane",
+        "place": 38,
+        "time": 1715
+      },
+      {
+        "userId": 764791,
+        "user": "Ed j",
+        "link": null,
+        "place": 39,
+        "time": 1720
+      },
+      {
+        "userId": 406017,
+        "user": "Erik Szalay",
+        "link": null,
+        "place": 40,
+        "time": 1733
+      },
+      {
+        "userId": 111306,
+        "user": "(anonymous user #111306)",
+        "link": null,
+        "place": 41,
+        "time": 1740
+      },
+      {
+        "userId": 133207,
+        "user": "Robert Xiao",
+        "link": "https://github.com/nneonneo",
+        "place": 42,
+        "time": 1742
+      },
+      {
+        "userId": 388769,
+        "user": "Michelle Yi (AoC++)",
+        "link": "/2019/support",
+        "place": 43,
+        "time": 1747
+      },
+      {
+        "userId": 379211,
+        "user": "Sahil Kochar",
+        "link": null,
+        "place": 44,
+        "time": 1751
+      },
+      {
+        "userId": 826427,
+        "user": "jes",
+        "link": "https://github.com/jes",
+        "place": 45,
+        "time": 1772
+      },
+      {
+        "userId": 226479,
+        "user": "Ryan Norris",
+        "link": "https://github.com/rynorris",
+        "place": 46,
+        "time": 1786
+      },
+      {
+        "userId": 129611,
+        "user": "Arios16",
+        "link": "https://github.com/Arios16",
+        "place": 47,
+        "time": 1828
+      },
+      {
+        "userId": 746668,
+        "user": "cmears",
+        "link": "https://github.com/cmears",
+        "place": 48,
+        "time": 1831
+      },
+      {
+        "userId": 676720,
+        "user": "David Hao",
+        "link": null,
+        "place": 49,
+        "time": 1834
+      },
+      {
+        "userId": 492493,
+        "user": "Liresol",
+        "link": null,
+        "place": 50,
+        "time": 1838
+      },
+      {
+        "userId": 189889,
+        "user": "Leon Loopik",
+        "link": "https://github.com/Lewn",
+        "place": 51,
+        "time": 1847
+      },
+      {
+        "userId": 43100,
+        "user": "glguy (AoC++)",
+        "link": "https://github.com/glguy",
+        "place": 52,
+        "time": 1860
+      },
+      {
+        "userId": 66333,
+        "user": "Zack Chroman",
+        "link": null,
+        "place": 53,
+        "time": 1900
+      },
+      {
+        "userId": 484627,
+        "user": "MarshallOfSound",
+        "link": "https://github.com/MarshallOfSound",
+        "place": 54,
+        "time": 1914
+      },
+      {
+        "userId": 225218,
+        "user": "Jerry Chen",
+        "link": null,
+        "place": 55,
+        "time": 1922
+      },
+      {
+        "userId": 157545,
+        "user": "Snild Dolkow",
+        "link": null,
+        "place": 56,
+        "time": 1924
+      },
+      {
+        "userId": 662958,
+        "user": "Robert Tupelo-Schneck",
+        "link": null,
+        "place": 57,
+        "time": 1934
+      },
+      {
+        "userId": 632701,
+        "user": "Shalini Kumar",
+        "link": null,
+        "place": 58,
+        "time": 1946
+      },
+      {
+        "userId": 410105,
+        "user": "Matthew Ramina",
+        "link": "https://github.com/mattr555",
+        "place": 59,
+        "time": 1951
+      },
+      {
+        "userId": 638494,
+        "user": "TheThirdOne",
+        "link": "https://github.com/TheThirdOne",
+        "place": 60,
+        "time": 1960
+      },
+      {
+        "userId": 152371,
+        "user": "Andreas Hansson",
+        "link": null,
+        "place": 61,
+        "time": 1967
+      },
+      {
+        "userId": 308033,
+        "user": "Kragnir",
+        "link": null,
+        "place": 62,
+        "time": 1982
+      },
+      {
+        "userId": 410460,
+        "user": "Santiclause",
+        "link": "https://github.com/Santiclause",
+        "place": 63,
+        "time": 1990
+      },
+      {
+        "userId": 433725,
+        "user": "pbfy0",
+        "link": "https://github.com/pbfy0",
+        "place": 64,
+        "time": 2018
+      },
+      {
+        "userId": 11083,
+        "user": "gwillen (AoC++)",
+        "link": "https://github.com/gwillen",
+        "place": 65,
+        "time": 2040
+      },
+      {
+        "userId": 587077,
+        "user": "HansAnonymous",
+        "link": "https://github.com/HansAnonymous",
+        "place": 66,
+        "time": 2049
+      },
+      {
+        "userId": 435163,
+        "user": "jeremyyap",
+        "link": "https://github.com/jeremyyap",
+        "place": 67,
+        "time": 2053
+      },
+      {
+        "userId": 5017,
+        "user": "Lukas Huwald (AoC++)",
+        "link": "https://github.com/vanHavel",
+        "place": 68,
+        "time": 2066
+      },
+      {
+        "userId": 198796,
+        "user": "VeeArr (AoC++)",
+        "link": "/2019/support",
+        "place": 69,
+        "time": 2076
+      },
+      {
+        "userId": 75249,
+        "user": "petertseng",
+        "link": "https://github.com/petertseng",
+        "place": 70,
+        "time": 2080
+      },
+      {
+        "userId": 1995,
+        "user": "1lann",
+        "link": "https://github.com/1lann",
+        "place": 71,
+        "time": 2095
+      },
+      {
+        "userId": 645784,
+        "user": "Vladimir Urdešić",
+        "link": null,
+        "place": 72,
+        "time": 2115
+      },
+      {
+        "userId": 423621,
+        "user": "Kroppeb",
+        "link": "https://github.com/Kroppeb",
+        "place": 73,
+        "time": 2120
+      },
+      {
+        "userId": 749511,
+        "user": "Morgan Wolfe",
+        "link": null,
+        "place": 74,
+        "time": 2153
+      },
+      {
+        "userId": 388596,
+        "user": "SwipedRight",
+        "link": null,
+        "place": 75,
+        "time": 2175
+      },
+      {
+        "userId": 658246,
+        "user": "the-glu",
+        "link": null,
+        "place": 76,
+        "time": 2187
+      },
+      {
+        "userId": 681412,
+        "user": "(anonymous user #681412)",
+        "link": null,
+        "place": 77,
+        "time": 2201
+      },
+      {
+        "userId": 384404,
+        "user": "Samu Jussila",
+        "link": null,
+        "place": 78,
+        "time": 2210
+      },
+      {
+        "userId": 204638,
+        "user": "(anonymous user #204638) (AoC++)",
+        "link": "/2019/support",
+        "place": 79,
+        "time": 2226
+      },
+      {
+        "userId": 645723,
+        "user": "m-schm (AoC++)",
+        "link": "https://github.com/m-schm",
+        "place": 80,
+        "time": 2239
+      },
+      {
+        "userId": 672438,
+        "user": "Fengyang Wang (AoC++)",
+        "link": "https://github.com/TotalVerb",
+        "place": 81,
+        "time": 2256
+      },
+      {
+        "userId": 726429,
+        "user": "(anonymous user #726429)",
+        "link": null,
+        "place": 82,
+        "time": 2264
+      },
+      {
+        "userId": 757851,
+        "user": "Mathieu Lafon",
+        "link": null,
+        "place": 83,
+        "time": 2303
+      },
+      {
+        "userId": 636983,
+        "user": "Yusuf Elsharawy",
+        "link": null,
+        "place": 84,
+        "time": 2308
+      },
+      {
+        "userId": 20980,
+        "user": "jholman (AoC++)",
+        "link": "/2019/support",
+        "place": 85,
+        "time": 2311
+      },
+      {
+        "userId": 360786,
+        "user": "Winston Ewert",
+        "link": null,
+        "place": 86,
+        "time": 2318
+      },
+      {
+        "userId": 243316,
+        "user": "mingmingrr",
+        "link": null,
+        "place": 87,
+        "time": 2343
+      },
+      {
+        "userId": 370839,
+        "user": "Howard",
+        "link": null,
+        "place": 88,
+        "time": 2370
+      },
+      {
+        "userId": 471784,
+        "user": "WildUtah",
+        "link": "https://github.com/WildUtah",
+        "place": 89,
+        "time": 2374
+      },
+      {
+        "userId": 222153,
+        "user": "Jonathan Chow",
+        "link": "https://github.com/echojc",
+        "place": 90,
+        "time": 2377
+      },
+      {
+        "userId": 822993,
+        "user": "kagami hiiragi",
+        "link": null,
+        "place": 91,
+        "time": 2406
+      },
+      {
+        "userId": 668284,
+        "user": "med200",
+        "link": null,
+        "place": 92,
+        "time": 2419
+      },
+      {
+        "userId": 446701,
+        "user": "Tyler Zhang",
+        "link": null,
+        "place": 93,
+        "time": 2422
+      },
+      {
+        "userId": 122661,
+        "user": "Joshua Berne",
+        "link": null,
+        "place": 94,
+        "time": 2460
+      },
+      {
+        "userId": 133354,
+        "user": "Arnavion",
+        "link": "https://github.com/Arnavion",
+        "place": 95,
+        "time": 2469
+      },
+      {
+        "userId": 418513,
+        "user": "(anonymous user #418513)",
+        "link": null,
+        "place": 96,
+        "time": 2511
+      },
+      {
+        "userId": 386588,
+        "user": "RJ Walsh",
+        "link": null,
+        "place": 97,
+        "time": 2522
+      },
+      {
+        "userId": 635847,
+        "user": "ffutop",
+        "link": "https://github.com/ffutop",
+        "place": 98,
+        "time": 2527
+      },
+      {
+        "userId": 375036,
+        "user": "alcatrazEscapee",
+        "link": "https://github.com/alcatrazEscapee",
+        "place": 99,
+        "time": 2536
+      },
+      {
+        "userId": 376241,
+        "user": "Burntmace",
+        "link": null,
+        "place": 100,
+        "time": 2538
+      }
+    ]
+  }
+}

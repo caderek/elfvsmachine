@@ -38,13 +38,11 @@ export async function fetchDay(year, day) {
       const place = node.querySelector(".leaderboard-position").textContent
       const time = node.querySelector(".leaderboard-time").textContent
       const user = node.textContent.replace(place, "").replace(time, "").trim()
-      const userLink = node.querySelector("a")?.href ?? null
-      const userPic = node.querySelector("img")?.src ?? null
+      const link = node.querySelector("a")?.href ?? null
       entries[part].push({
         userId: Number(userId),
         user,
-        userLink,
-        userPic,
+        link,
         place: Number(place.replace(")", "").trim()),
         time: getSeconds(time),
       })

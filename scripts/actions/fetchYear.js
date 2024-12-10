@@ -4,8 +4,8 @@ import path from "node:path"
 import { config } from "../../config.js"
 import { fetchDay } from "./fetchDay.js"
 
-export async function fetchYear(year, daysDone) {
-  for (let day = 1; day <= 25; day++) {
+export async function fetchYear(year, daysDone, maxDay) {
+  for (let day = 1; day <= maxDay; day++) {
     if (daysDone.has(day)) {
       console.warn(`${year} ${day} already fetched!`)
       continue

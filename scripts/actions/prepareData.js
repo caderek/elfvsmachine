@@ -2,7 +2,7 @@ import fs from "node:fs"
 import path from "node:path"
 
 import { config } from "../../config.js"
-import { calculateMedian } from "./math.js"
+import { calculateMedian } from "./util.js"
 
 function prepareScores(results) {
   if (results.length < 100) {
@@ -23,10 +23,10 @@ const isExternalLink = (link) => {
 function prepareUsers(entries) {
   const users = {}
 
-  for (const { userId, user, userLink } of entries) {
+  for (const { userId, user, link } of entries) {
     users[userId] = [
       user.replace("(AoC++)", "").replace(" (Sponsor)", "").trim(),
-      isExternalLink(userLink) ? userLink : null,
+      isExternalLink(link) ? link : null,
     ]
   }
 

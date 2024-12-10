@@ -1,0 +1,1410 @@
+{
+  "year": 2024,
+  "day": 5,
+  "results": {
+    "1": [
+      {
+        "userId": 4455508,
+        "user": "Lakshay",
+        "link": null,
+        "place": 1,
+        "time": 14
+      },
+      {
+        "userId": 843547,
+        "user": "Taras Gritsenko",
+        "link": "https://github.com/qubard",
+        "place": 2,
+        "time": 18
+      },
+      {
+        "userId": 4420846,
+        "user": "hugoromerorico",
+        "link": "https://github.com/hugoromerorico",
+        "place": 3,
+        "time": 19
+      },
+      {
+        "userId": 1718830,
+        "user": "Remy ROYER-ADNOT",
+        "link": null,
+        "place": 4,
+        "time": 25
+      },
+      {
+        "userId": 725826,
+        "user": "George Hotz (AoC++)",
+        "link": "https://github.com/geohot",
+        "place": 5,
+        "time": 30
+      },
+      {
+        "userId": 3592015,
+        "user": "zvdy",
+        "link": "https://github.com/zvdy",
+        "place": 6,
+        "time": 34
+      },
+      {
+        "userId": 2555615,
+        "user": "(anonymous user #2555615) (AoC++)",
+        "link": "/2024/support",
+        "place": 7,
+        "time": 36
+      },
+      {
+        "userId": 1305228,
+        "user": "fromthebits",
+        "link": null,
+        "place": 8,
+        "time": 38
+      },
+      {
+        "userId": 652390,
+        "user": "Michael Broughton",
+        "link": null,
+        "place": 9,
+        "time": 39
+      },
+      {
+        "userId": 4291068,
+        "user": "PeterFrancoisBadenhorst",
+        "link": null,
+        "place": 10,
+        "time": 42
+      },
+      {
+        "userId": 4318369,
+        "user": "Justin Wang",
+        "link": null,
+        "place": 11,
+        "time": 42
+      },
+      {
+        "userId": 4317441,
+        "user": "AniruthAnanth",
+        "link": "https://github.com/AniruthAnanth",
+        "place": 12,
+        "time": 46
+      },
+      {
+        "userId": 4641176,
+        "user": "Simon Wacziarg",
+        "link": null,
+        "place": 13,
+        "time": 46
+      },
+      {
+        "userId": 1438840,
+        "user": "Stephan Botes",
+        "link": null,
+        "place": 14,
+        "time": 48
+      },
+      {
+        "userId": 2204614,
+        "user": "secemp9",
+        "link": "https://github.com/secemp9",
+        "place": 15,
+        "time": 48
+      },
+      {
+        "userId": 2854116,
+        "user": "Peter Cullen Burbery",
+        "link": "https://github.com/PeterCullenBurbery",
+        "place": 16,
+        "time": 49
+      },
+      {
+        "userId": 2349639,
+        "user": "Alex Steele",
+        "link": "https://github.com/ADSteele916",
+        "place": 17,
+        "time": 50
+      },
+      {
+        "userId": 3724768,
+        "user": "Aidan Littman",
+        "link": "https://github.com/spmfte",
+        "place": 18,
+        "time": 50
+      },
+      {
+        "userId": 2574153,
+        "user": "eniraa (AoC++)",
+        "link": "https://github.com/eniraa",
+        "place": 19,
+        "time": 52
+      },
+      {
+        "userId": 4389070,
+        "user": "Omi J",
+        "link": null,
+        "place": 20,
+        "time": 52
+      },
+      {
+        "userId": 974260,
+        "user": "Kamila Szewczyk",
+        "link": "https://github.com/kspalaiologos",
+        "place": 21,
+        "time": 53
+      },
+      {
+        "userId": 4304334,
+        "user": "Fatima Malik",
+        "link": null,
+        "place": 22,
+        "time": 53
+      },
+      {
+        "userId": 4251884,
+        "user": "Małgorzata Kozłowska",
+        "link": "https://github.com/malgorzata-kozlowska",
+        "place": 23,
+        "time": 56
+      },
+      {
+        "userId": 1330668,
+        "user": "Laurens Profittlich",
+        "link": null,
+        "place": 24,
+        "time": 56
+      },
+      {
+        "userId": 4309831,
+        "user": "Nagendra1421 (Sponsor)",
+        "link": "/2024/sponsors/redirect?url=https%3A%2F%2Fwww%2Ejpmorgan%2Ecom%2F",
+        "place": 25,
+        "time": 56
+      },
+      {
+        "userId": 721055,
+        "user": "caporalCoder",
+        "link": "https://github.com/caporalCoder",
+        "place": 26,
+        "time": 57
+      },
+      {
+        "userId": 4409455,
+        "user": "@zukonit14",
+        "link": null,
+        "place": 27,
+        "time": 57
+      },
+      {
+        "userId": 4224405,
+        "user": "Mxz-11",
+        "link": null,
+        "place": 28,
+        "time": 57
+      },
+      {
+        "userId": 2537932,
+        "user": "(anonymous user #2537932) (Sponsor)",
+        "link": "/2024/sponsors/redirect?url=https%3A%2F%2Fwww%2Esplunk%2Ecom%2Fen%5Fus%2Fcareers%2Ehtml",
+        "place": 29,
+        "time": 58
+      },
+      {
+        "userId": 2502473,
+        "user": "Maverick Woo",
+        "link": null,
+        "place": 30,
+        "time": 58
+      },
+      {
+        "userId": 4322406,
+        "user": "Subhargh",
+        "link": null,
+        "place": 31,
+        "time": 61
+      },
+      {
+        "userId": 1567713,
+        "user": "@Dusknt",
+        "link": "https://twitter.com/Dusknt",
+        "place": 32,
+        "time": 62
+      },
+      {
+        "userId": 4606638,
+        "user": "Seth Payne",
+        "link": null,
+        "place": 33,
+        "time": 63
+      },
+      {
+        "userId": 996946,
+        "user": "jovsa",
+        "link": "https://github.com/jovsa",
+        "place": 34,
+        "time": 64
+      },
+      {
+        "userId": 4332414,
+        "user": "Arjun M",
+        "link": null,
+        "place": 35,
+        "time": 65
+      },
+      {
+        "userId": 3293573,
+        "user": "radres",
+        "link": "https://github.com/radres",
+        "place": 36,
+        "time": 65
+      },
+      {
+        "userId": 2252830,
+        "user": "Himanshu Shekhar",
+        "link": null,
+        "place": 37,
+        "time": 65
+      },
+      {
+        "userId": 2321159,
+        "user": "JohnnyBazzinga (AoC++)",
+        "link": "/2024/support",
+        "place": 38,
+        "time": 65
+      },
+      {
+        "userId": 302636,
+        "user": "(anonymous user #302636)",
+        "link": null,
+        "place": 39,
+        "time": 65
+      },
+      {
+        "userId": 4460507,
+        "user": "Aditya",
+        "link": null,
+        "place": 40,
+        "time": 65
+      },
+      {
+        "userId": 4222705,
+        "user": "Shidowy",
+        "link": null,
+        "place": 41,
+        "time": 68
+      },
+      {
+        "userId": 21715,
+        "user": "Alexander Fu",
+        "link": "https://github.com/tehalexf",
+        "place": 42,
+        "time": 70
+      },
+      {
+        "userId": 3328950,
+        "user": "NantusGroenewald",
+        "link": null,
+        "place": 43,
+        "time": 72
+      },
+      {
+        "userId": 1569907,
+        "user": "(anonymous user #1569907)",
+        "link": null,
+        "place": 44,
+        "time": 72
+      },
+      {
+        "userId": 2631545,
+        "user": "Luca De Cosmo",
+        "link": null,
+        "place": 45,
+        "time": 74
+      },
+      {
+        "userId": 2407362,
+        "user": "Duro",
+        "link": "https://github.com/DuroCodes",
+        "place": 46,
+        "time": 74
+      },
+      {
+        "userId": 4606368,
+        "user": "Arghadeep Saha",
+        "link": null,
+        "place": 47,
+        "time": 74
+      },
+      {
+        "userId": 4498188,
+        "user": "Richard Wray",
+        "link": null,
+        "place": 48,
+        "time": 75
+      },
+      {
+        "userId": 4301257,
+        "user": "Sikander Nawaz",
+        "link": null,
+        "place": 49,
+        "time": 75
+      },
+      {
+        "userId": 4424768,
+        "user": "Francesco Paolo Piga",
+        "link": null,
+        "place": 50,
+        "time": 75
+      },
+      {
+        "userId": 4216027,
+        "user": "Steven Grond (AoC++)",
+        "link": "/2024/support",
+        "place": 51,
+        "time": 76
+      },
+      {
+        "userId": 1580741,
+        "user": "Baron105",
+        "link": "https://github.com/Baron105",
+        "place": 52,
+        "time": 76
+      },
+      {
+        "userId": 687611,
+        "user": "Tom Donohue",
+        "link": "https://github.com/donth77",
+        "place": 53,
+        "time": 77
+      },
+      {
+        "userId": 778977,
+        "user": "(anonymous user #778977)",
+        "link": null,
+        "place": 54,
+        "time": 77
+      },
+      {
+        "userId": 258346,
+        "user": "Alvar Soome",
+        "link": null,
+        "place": 55,
+        "time": 78
+      },
+      {
+        "userId": 1067586,
+        "user": "(anonymous user #1067586)",
+        "link": null,
+        "place": 56,
+        "time": 79
+      },
+      {
+        "userId": 4319198,
+        "user": "David Guo",
+        "link": null,
+        "place": 57,
+        "time": 80
+      },
+      {
+        "userId": 4324170,
+        "user": "Jaron Rothbaum",
+        "link": null,
+        "place": 58,
+        "time": 81
+      },
+      {
+        "userId": 3303925,
+        "user": "Nihal Awasthi",
+        "link": null,
+        "place": 59,
+        "time": 81
+      },
+      {
+        "userId": 3245669,
+        "user": "Ad1tya-007",
+        "link": "https://github.com/Ad1tya-007",
+        "place": 60,
+        "time": 82
+      },
+      {
+        "userId": 4284590,
+        "user": "Madhusudhan Reddy Yerragudi",
+        "link": null,
+        "place": 61,
+        "time": 83
+      },
+      {
+        "userId": 3676422,
+        "user": "bobthebuilder2795",
+        "link": null,
+        "place": 62,
+        "time": 83
+      },
+      {
+        "userId": 2330367,
+        "user": "James Sorenson",
+        "link": null,
+        "place": 63,
+        "time": 83
+      },
+      {
+        "userId": 4273381,
+        "user": "Bikatr7 (AoC++)",
+        "link": "https://github.com/Bikatr7",
+        "place": 64,
+        "time": 83
+      },
+      {
+        "userId": 3342981,
+        "user": "LeDawaa",
+        "link": "https://github.com/LeDawaa",
+        "place": 65,
+        "time": 84
+      },
+      {
+        "userId": 4265656,
+        "user": "Hunter Gould",
+        "link": "https://github.com/Gouldh",
+        "place": 66,
+        "time": 85
+      },
+      {
+        "userId": 661065,
+        "user": "Justin Watts (AoC++)",
+        "link": "https://github.com/azohra",
+        "place": 67,
+        "time": 87
+      },
+      {
+        "userId": 4260069,
+        "user": "oofmatoes",
+        "link": "https://github.com/oofmatoes",
+        "place": 68,
+        "time": 88
+      },
+      {
+        "userId": 4513890,
+        "user": "Aleksei Popov",
+        "link": null,
+        "place": 69,
+        "time": 89
+      },
+      {
+        "userId": 4381397,
+        "user": "atharvwani01 (Sponsor)",
+        "link": "/2024/sponsors/redirect?url=https%3A%2F%2Fwww%2Ejpmorgan%2Ecom%2F",
+        "place": 70,
+        "time": 89
+      },
+      {
+        "userId": 4547049,
+        "user": "Lex Moulton",
+        "link": null,
+        "place": 71,
+        "time": 90
+      },
+      {
+        "userId": 4460279,
+        "user": "53",
+        "link": null,
+        "place": 72,
+        "time": 91
+      },
+      {
+        "userId": 4576386,
+        "user": "Rozen Berg",
+        "link": null,
+        "place": 73,
+        "time": 91
+      },
+      {
+        "userId": 4305380,
+        "user": "(anonymous user #4305380)",
+        "link": null,
+        "place": 74,
+        "time": 91
+      },
+      {
+        "userId": 991941,
+        "user": "Kyle He",
+        "link": "https://github.com/kyle-he",
+        "place": 75,
+        "time": 93
+      },
+      {
+        "userId": 3333239,
+        "user": "Ian Wilson (AoC++)",
+        "link": "https://github.com/uid0",
+        "place": 76,
+        "time": 93
+      },
+      {
+        "userId": 3384635,
+        "user": "Hugo Hu-man",
+        "link": null,
+        "place": 77,
+        "time": 94
+      },
+      {
+        "userId": 3415866,
+        "user": "Sreekanth Krishnankutty Nair",
+        "link": null,
+        "place": 78,
+        "time": 95
+      },
+      {
+        "userId": 2791407,
+        "user": "Emil",
+        "link": "https://github.com/Peu77",
+        "place": 79,
+        "time": 98
+      },
+      {
+        "userId": 147733,
+        "user": "intelliot",
+        "link": "https://github.com/intelliot",
+        "place": 80,
+        "time": 99
+      },
+      {
+        "userId": 4291013,
+        "user": "Alexandra Murzina",
+        "link": null,
+        "place": 81,
+        "time": 99
+      },
+      {
+        "userId": 1548559,
+        "user": "imagine-hussain",
+        "link": "https://github.com/imagine-hussain",
+        "place": 82,
+        "time": 103
+      },
+      {
+        "userId": 3461558,
+        "user": "3kh0 (AoC++)",
+        "link": "https://github.com/3kh0",
+        "place": 83,
+        "time": 104
+      },
+      {
+        "userId": 4322050,
+        "user": "gnawyymmij",
+        "link": null,
+        "place": 84,
+        "time": 104
+      },
+      {
+        "userId": 1520292,
+        "user": "Pancake",
+        "link": "https://github.com/Cinnamonsroll",
+        "place": 85,
+        "time": 104
+      },
+      {
+        "userId": 4454326,
+        "user": "(anonymous user #4454326)",
+        "link": null,
+        "place": 86,
+        "time": 106
+      },
+      {
+        "userId": 2985249,
+        "user": "neelthepatel8",
+        "link": "https://github.com/neelthepatel8",
+        "place": 87,
+        "time": 107
+      },
+      {
+        "userId": 3231888,
+        "user": "Christian Smith",
+        "link": "https://github.com/Lt-Munchies",
+        "place": 88,
+        "time": 108
+      },
+      {
+        "userId": 678609,
+        "user": "Kevin Sheng",
+        "link": null,
+        "place": 89,
+        "time": 109
+      },
+      {
+        "userId": 4275023,
+        "user": "mocy (AoC++)",
+        "link": "https://github.com/mocy",
+        "place": 90,
+        "time": 110
+      },
+      {
+        "userId": 1025299,
+        "user": "Alen Koso (AoC++)",
+        "link": "/2024/support",
+        "place": 91,
+        "time": 110
+      },
+      {
+        "userId": 3468430,
+        "user": "(anonymous user #3468430)",
+        "link": null,
+        "place": 92,
+        "time": 110
+      },
+      {
+        "userId": 4436809,
+        "user": "Lars Tegeler",
+        "link": null,
+        "place": 93,
+        "time": 114
+      },
+      {
+        "userId": 3642801,
+        "user": "NicAgileBridge",
+        "link": null,
+        "place": 94,
+        "time": 114
+      },
+      {
+        "userId": 4509128,
+        "user": "ChuKotDi",
+        "link": "https://github.com/ChuKotDi",
+        "place": 95,
+        "time": 115
+      },
+      {
+        "userId": 4042736,
+        "user": "Alexander",
+        "link": null,
+        "place": 96,
+        "time": 116
+      },
+      {
+        "userId": 4422568,
+        "user": "(anonymous user #4422568)",
+        "link": null,
+        "place": 97,
+        "time": 117
+      },
+      {
+        "userId": 3194024,
+        "user": "bjaxqq",
+        "link": "https://github.com/bjaxqq",
+        "place": 98,
+        "time": 117
+      },
+      {
+        "userId": 4295551,
+        "user": "Jakub Spólnik",
+        "link": "https://github.com/lawos98",
+        "place": 99,
+        "time": 117
+      },
+      {
+        "userId": 401804,
+        "user": "nim-ka",
+        "link": "https://github.com/nim-ka",
+        "place": 100,
+        "time": 118
+      }
+    ],
+    "2": [
+      {
+        "userId": 1718830,
+        "user": "Remy ROYER-ADNOT",
+        "link": null,
+        "place": 1,
+        "time": 55
+      },
+      {
+        "userId": 843547,
+        "user": "Taras Gritsenko",
+        "link": "https://github.com/qubard",
+        "place": 2,
+        "time": 61
+      },
+      {
+        "userId": 725826,
+        "user": "George Hotz (AoC++)",
+        "link": "https://github.com/geohot",
+        "place": 3,
+        "time": 61
+      },
+      {
+        "userId": 3592015,
+        "user": "zvdy",
+        "link": "https://github.com/zvdy",
+        "place": 4,
+        "time": 69
+      },
+      {
+        "userId": 2854116,
+        "user": "Peter Cullen Burbery",
+        "link": "https://github.com/PeterCullenBurbery",
+        "place": 5,
+        "time": 73
+      },
+      {
+        "userId": 2555615,
+        "user": "(anonymous user #2555615) (AoC++)",
+        "link": "/2024/support",
+        "place": 6,
+        "time": 75
+      },
+      {
+        "userId": 3724768,
+        "user": "Aidan Littman",
+        "link": "https://github.com/spmfte",
+        "place": 7,
+        "time": 76
+      },
+      {
+        "userId": 2204614,
+        "user": "secemp9",
+        "link": "https://github.com/secemp9",
+        "place": 8,
+        "time": 80
+      },
+      {
+        "userId": 1305228,
+        "user": "fromthebits",
+        "link": null,
+        "place": 9,
+        "time": 83
+      },
+      {
+        "userId": 4389070,
+        "user": "Omi J",
+        "link": null,
+        "place": 10,
+        "time": 96
+      },
+      {
+        "userId": 4641176,
+        "user": "Simon Wacziarg",
+        "link": null,
+        "place": 11,
+        "time": 98
+      },
+      {
+        "userId": 4291068,
+        "user": "PeterFrancoisBadenhorst",
+        "link": null,
+        "place": 12,
+        "time": 102
+      },
+      {
+        "userId": 721055,
+        "user": "caporalCoder",
+        "link": "https://github.com/caporalCoder",
+        "place": 13,
+        "time": 102
+      },
+      {
+        "userId": 4322406,
+        "user": "Subhargh",
+        "link": null,
+        "place": 14,
+        "time": 103
+      },
+      {
+        "userId": 2574153,
+        "user": "eniraa (AoC++)",
+        "link": "https://github.com/eniraa",
+        "place": 15,
+        "time": 104
+      },
+      {
+        "userId": 2321159,
+        "user": "JohnnyBazzinga (AoC++)",
+        "link": "/2024/support",
+        "place": 16,
+        "time": 109
+      },
+      {
+        "userId": 1330668,
+        "user": "Laurens Profittlich",
+        "link": null,
+        "place": 17,
+        "time": 110
+      },
+      {
+        "userId": 4309831,
+        "user": "Nagendra1421 (Sponsor)",
+        "link": "/2024/sponsors/redirect?url=https%3A%2F%2Fwww%2Ejpmorgan%2Ecom%2F",
+        "place": 18,
+        "time": 112
+      },
+      {
+        "userId": 4224405,
+        "user": "Mxz-11",
+        "link": null,
+        "place": 19,
+        "time": 116
+      },
+      {
+        "userId": 4273381,
+        "user": "Bikatr7 (AoC++)",
+        "link": "https://github.com/Bikatr7",
+        "place": 20,
+        "time": 117
+      },
+      {
+        "userId": 2631545,
+        "user": "Luca De Cosmo",
+        "link": null,
+        "place": 21,
+        "time": 118
+      },
+      {
+        "userId": 302636,
+        "user": "(anonymous user #302636)",
+        "link": null,
+        "place": 22,
+        "time": 118
+      },
+      {
+        "userId": 4332414,
+        "user": "Arjun M",
+        "link": null,
+        "place": 23,
+        "time": 120
+      },
+      {
+        "userId": 4460507,
+        "user": "Aditya",
+        "link": null,
+        "place": 24,
+        "time": 121
+      },
+      {
+        "userId": 4409455,
+        "user": "@zukonit14",
+        "link": null,
+        "place": 25,
+        "time": 121
+      },
+      {
+        "userId": 661065,
+        "user": "Justin Watts (AoC++)",
+        "link": "https://github.com/azohra",
+        "place": 26,
+        "time": 124
+      },
+      {
+        "userId": 4424768,
+        "user": "Francesco Paolo Piga",
+        "link": null,
+        "place": 27,
+        "time": 127
+      },
+      {
+        "userId": 687611,
+        "user": "Tom Donohue",
+        "link": "https://github.com/donth77",
+        "place": 28,
+        "time": 127
+      },
+      {
+        "userId": 4547049,
+        "user": "Lex Moulton",
+        "link": null,
+        "place": 29,
+        "time": 129
+      },
+      {
+        "userId": 2252830,
+        "user": "Himanshu Shekhar",
+        "link": null,
+        "place": 30,
+        "time": 132
+      },
+      {
+        "userId": 4606368,
+        "user": "Arghadeep Saha",
+        "link": null,
+        "place": 31,
+        "time": 133
+      },
+      {
+        "userId": 3245669,
+        "user": "Ad1tya-007",
+        "link": "https://github.com/Ad1tya-007",
+        "place": 32,
+        "time": 133
+      },
+      {
+        "userId": 2537932,
+        "user": "(anonymous user #2537932) (Sponsor)",
+        "link": "/2024/sponsors/redirect?url=https%3A%2F%2Fwww%2Esplunk%2Ecom%2Fen%5Fus%2Fcareers%2Ehtml",
+        "place": 33,
+        "time": 134
+      },
+      {
+        "userId": 2502473,
+        "user": "Maverick Woo",
+        "link": null,
+        "place": 34,
+        "time": 134
+      },
+      {
+        "userId": 996946,
+        "user": "jovsa",
+        "link": "https://github.com/jovsa",
+        "place": 35,
+        "time": 135
+      },
+      {
+        "userId": 4222705,
+        "user": "Shidowy",
+        "link": null,
+        "place": 36,
+        "time": 135
+      },
+      {
+        "userId": 21715,
+        "user": "Alexander Fu",
+        "link": "https://github.com/tehalexf",
+        "place": 37,
+        "time": 136
+      },
+      {
+        "userId": 778977,
+        "user": "(anonymous user #778977)",
+        "link": null,
+        "place": 38,
+        "time": 137
+      },
+      {
+        "userId": 4251884,
+        "user": "Małgorzata Kozłowska",
+        "link": "https://github.com/malgorzata-kozlowska",
+        "place": 39,
+        "time": 138
+      },
+      {
+        "userId": 3342981,
+        "user": "LeDawaa",
+        "link": "https://github.com/LeDawaa",
+        "place": 40,
+        "time": 141
+      },
+      {
+        "userId": 4216027,
+        "user": "Steven Grond (AoC++)",
+        "link": "/2024/support",
+        "place": 41,
+        "time": 141
+      },
+      {
+        "userId": 4455508,
+        "user": "Lakshay",
+        "link": null,
+        "place": 42,
+        "time": 142
+      },
+      {
+        "userId": 4498188,
+        "user": "Richard Wray",
+        "link": null,
+        "place": 43,
+        "time": 143
+      },
+      {
+        "userId": 2985249,
+        "user": "neelthepatel8",
+        "link": "https://github.com/neelthepatel8",
+        "place": 44,
+        "time": 148
+      },
+      {
+        "userId": 974260,
+        "user": "Kamila Szewczyk",
+        "link": "https://github.com/kspalaiologos",
+        "place": 45,
+        "time": 150
+      },
+      {
+        "userId": 3303925,
+        "user": "Nihal Awasthi",
+        "link": null,
+        "place": 46,
+        "time": 151
+      },
+      {
+        "userId": 3194024,
+        "user": "bjaxqq",
+        "link": "https://github.com/bjaxqq",
+        "place": 47,
+        "time": 152
+      },
+      {
+        "userId": 3394841,
+        "user": "(anonymous user #3394841)",
+        "link": null,
+        "place": 48,
+        "time": 154
+      },
+      {
+        "userId": 1520292,
+        "user": "Pancake",
+        "link": "https://github.com/Cinnamonsroll",
+        "place": 49,
+        "time": 155
+      },
+      {
+        "userId": 4576386,
+        "user": "Rozen Berg",
+        "link": null,
+        "place": 50,
+        "time": 159
+      },
+      {
+        "userId": 3328950,
+        "user": "NantusGroenewald",
+        "link": null,
+        "place": 51,
+        "time": 160
+      },
+      {
+        "userId": 3384635,
+        "user": "Hugo Hu-man",
+        "link": null,
+        "place": 52,
+        "time": 164
+      },
+      {
+        "userId": 4322050,
+        "user": "gnawyymmij",
+        "link": null,
+        "place": 53,
+        "time": 165
+      },
+      {
+        "userId": 4638432,
+        "user": "Nick C",
+        "link": null,
+        "place": 54,
+        "time": 165
+      },
+      {
+        "userId": 258346,
+        "user": "Alvar Soome",
+        "link": null,
+        "place": 55,
+        "time": 166
+      },
+      {
+        "userId": 2407362,
+        "user": "Duro",
+        "link": "https://github.com/DuroCodes",
+        "place": 56,
+        "time": 167
+      },
+      {
+        "userId": 4381397,
+        "user": "atharvwani01 (Sponsor)",
+        "link": "/2024/sponsors/redirect?url=https%3A%2F%2Fwww%2Ejpmorgan%2Ecom%2F",
+        "place": 57,
+        "time": 167
+      },
+      {
+        "userId": 1548559,
+        "user": "imagine-hussain",
+        "link": "https://github.com/imagine-hussain",
+        "place": 58,
+        "time": 168
+      },
+      {
+        "userId": 1438840,
+        "user": "Stephan Botes",
+        "link": null,
+        "place": 59,
+        "time": 169
+      },
+      {
+        "userId": 2330367,
+        "user": "James Sorenson",
+        "link": null,
+        "place": 60,
+        "time": 171
+      },
+      {
+        "userId": 3415866,
+        "user": "Sreekanth Krishnankutty Nair",
+        "link": null,
+        "place": 61,
+        "time": 172
+      },
+      {
+        "userId": 4310039,
+        "user": "fraito",
+        "link": null,
+        "place": 62,
+        "time": 177
+      },
+      {
+        "userId": 3389258,
+        "user": "grkozlowski",
+        "link": null,
+        "place": 63,
+        "time": 178
+      },
+      {
+        "userId": 4223308,
+        "user": "Michael Peters",
+        "link": null,
+        "place": 64,
+        "time": 179
+      },
+      {
+        "userId": 4291013,
+        "user": "Alexandra Murzina",
+        "link": null,
+        "place": 65,
+        "time": 179
+      },
+      {
+        "userId": 4496671,
+        "user": "(anonymous user #4496671)",
+        "link": null,
+        "place": 66,
+        "time": 182
+      },
+      {
+        "userId": 147733,
+        "user": "intelliot",
+        "link": "https://github.com/intelliot",
+        "place": 67,
+        "time": 184
+      },
+      {
+        "userId": 4377095,
+        "user": "Rafiea Ashraf",
+        "link": "https://github.com/Rafiea-Ashraf",
+        "place": 68,
+        "time": 184
+      },
+      {
+        "userId": 4275023,
+        "user": "mocy (AoC++)",
+        "link": "https://github.com/mocy",
+        "place": 69,
+        "time": 186
+      },
+      {
+        "userId": 2243819,
+        "user": "cqzou",
+        "link": "https://github.com/cqzou",
+        "place": 70,
+        "time": 187
+      },
+      {
+        "userId": 4265656,
+        "user": "Hunter Gould",
+        "link": "https://github.com/Gouldh",
+        "place": 71,
+        "time": 188
+      },
+      {
+        "userId": 4606328,
+        "user": "Jaysen Kang",
+        "link": null,
+        "place": 72,
+        "time": 189
+      },
+      {
+        "userId": 4324170,
+        "user": "Jaron Rothbaum",
+        "link": null,
+        "place": 73,
+        "time": 189
+      },
+      {
+        "userId": 3468430,
+        "user": "(anonymous user #3468430)",
+        "link": null,
+        "place": 74,
+        "time": 190
+      },
+      {
+        "userId": 4420846,
+        "user": "hugoromerorico",
+        "link": "https://github.com/hugoromerorico",
+        "place": 75,
+        "time": 191
+      },
+      {
+        "userId": 4436809,
+        "user": "Lars Tegeler",
+        "link": null,
+        "place": 76,
+        "time": 192
+      },
+      {
+        "userId": 4398788,
+        "user": "Deprave",
+        "link": null,
+        "place": 77,
+        "time": 193
+      },
+      {
+        "userId": 4310470,
+        "user": "sihagujjwal (Sponsor)",
+        "link": "/2024/sponsors/redirect?url=https%3A%2F%2Fwww%2Ejpmorgan%2Ecom%2F",
+        "place": 78,
+        "time": 194
+      },
+      {
+        "userId": 4454326,
+        "user": "(anonymous user #4454326)",
+        "link": null,
+        "place": 79,
+        "time": 196
+      },
+      {
+        "userId": 4042736,
+        "user": "Alexander",
+        "link": null,
+        "place": 80,
+        "time": 197
+      },
+      {
+        "userId": 4260069,
+        "user": "oofmatoes",
+        "link": "https://github.com/oofmatoes",
+        "place": 81,
+        "time": 198
+      },
+      {
+        "userId": 3461558,
+        "user": "3kh0 (AoC++)",
+        "link": "https://github.com/3kh0",
+        "place": 82,
+        "time": 199
+      },
+      {
+        "userId": 4289949,
+        "user": "Dhruv Kangarla",
+        "link": null,
+        "place": 83,
+        "time": 200
+      },
+      {
+        "userId": 4196089,
+        "user": "luckytumang",
+        "link": null,
+        "place": 84,
+        "time": 203
+      },
+      {
+        "userId": 2509362,
+        "user": "Aaryam Maheshwary",
+        "link": null,
+        "place": 85,
+        "time": 203
+      },
+      {
+        "userId": 1025299,
+        "user": "Alen Koso (AoC++)",
+        "link": "/2024/support",
+        "place": 86,
+        "time": 205
+      },
+      {
+        "userId": 4549933,
+        "user": "Aman Shaw",
+        "link": null,
+        "place": 87,
+        "time": 208
+      },
+      {
+        "userId": 4301257,
+        "user": "Sikander Nawaz",
+        "link": null,
+        "place": 88,
+        "time": 211
+      },
+      {
+        "userId": 2373808,
+        "user": "Keagan de Castro",
+        "link": null,
+        "place": 89,
+        "time": 211
+      },
+      {
+        "userId": 991941,
+        "user": "Kyle He",
+        "link": "https://github.com/kyle-he",
+        "place": 90,
+        "time": 212
+      },
+      {
+        "userId": 4301065,
+        "user": "Muhammad Arslan",
+        "link": null,
+        "place": 91,
+        "time": 213
+      },
+      {
+        "userId": 1332861,
+        "user": "twinysam",
+        "link": "https://github.com/twinysam",
+        "place": 92,
+        "time": 214
+      },
+      {
+        "userId": 540056,
+        "user": "rudyardrichter",
+        "link": "https://github.com/rudyardrichter",
+        "place": 93,
+        "time": 215
+      },
+      {
+        "userId": 4456711,
+        "user": "Daniel Kremsa",
+        "link": null,
+        "place": 94,
+        "time": 215
+      },
+      {
+        "userId": 4386360,
+        "user": "markoub",
+        "link": null,
+        "place": 95,
+        "time": 217
+      },
+      {
+        "userId": 2402317,
+        "user": "DartCZ (AoC++)",
+        "link": "https://github.com/DartCZ",
+        "place": 96,
+        "time": 218
+      },
+      {
+        "userId": 4513890,
+        "user": "Aleksei Popov",
+        "link": null,
+        "place": 97,
+        "time": 219
+      },
+      {
+        "userId": 884457,
+        "user": "bvolpato (AoC++)",
+        "link": "https://github.com/bvolpato",
+        "place": 98,
+        "time": 220
+      },
+      {
+        "userId": 4321209,
+        "user": "(anonymous user #4321209)",
+        "link": null,
+        "place": 99,
+        "time": 222
+      },
+      {
+        "userId": 4319198,
+        "user": "David Guo",
+        "link": null,
+        "place": 100,
+        "time": 223
+      }
+    ]
+  }
+}
