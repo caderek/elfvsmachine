@@ -8,12 +8,16 @@ import {
   YearButton,
   Loading,
 } from "./src/views.js"
+import { initQueryString } from "./src/url.js"
 
 const $years = document.querySelector("#years")
 const $days = document.querySelector("#days")
 const $main = document.querySelector("main")
 
-async function load(year, day, algo, index) {
+async function load(year, day, algo, index, query) {
+  query.year = year
+  query.day = day
+
   $years.innerHTML = [0, ...Object.keys(index).map(Number)]
     .sort((a, b) => b - a)
     .map((y) => YearButton({ year: y, disabled: y === year }))
@@ -42,11 +46,10 @@ async function load(year, day, algo, index) {
 
 async function main() {
   const index = await getIndex()
-  const initialYear = Math.max(...Object.keys(index).map(Number))
-  const initialDay = 0
+  const query = initQueryString(index)
   const initialAlgo = "median"
 
-  await load(initialYear, initialDay, initialAlgo, index)
+  await load(query.year, query.day, initialAlgo, index, query)
 
   $years.addEventListener("click", (e) => {
     if (!e.target.tagName || e.target?.tagName.toLowerCase() !== "button") {
@@ -57,7 +60,7 @@ async function main() {
     const year = Number(target.dataset.year)
 
     $main.innerHTML = Loading()
-    load(year, 0, initialAlgo, index)
+    load(year, 0, initialAlgo, index, query)
   })
 
   $days.addEventListener("click", (e) => {
@@ -70,7 +73,7 @@ async function main() {
     const day = Number(target.dataset.day)
 
     $main.innerHTML = Loading()
-    load(year, day, initialAlgo, index)
+    load(year, day, initialAlgo, index, query)
   })
 }
 
