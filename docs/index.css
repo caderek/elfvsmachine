@@ -189,7 +189,7 @@ footer {
 }
 
 .info p + p {
-  margin-top: var(--space-s);
+  margin-top: var(--space-m);
 }
 
 @media screen and (max-width: 63.99rem) {
