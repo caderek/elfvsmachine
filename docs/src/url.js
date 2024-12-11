@@ -21,6 +21,10 @@ export function initQueryString(index) {
       return day > 0 && day <= index[year] ? day : 0
     },
 
+    get profile() {
+      return url.searchParams.get("profile")
+    },
+
     set year(val) {
       url.searchParams.set("year", val)
       window.history.pushState(null, "", url.toString())
@@ -28,6 +32,15 @@ export function initQueryString(index) {
 
     set day(val) {
       url.searchParams.set("day", val)
+      window.history.pushState(null, "", url.toString())
+    },
+
+    set profile(val) {
+      if (val !== null) {
+        url.searchParams.set("profile", val)
+      } else {
+        url.searchParams.delete("profile")
+      }
       window.history.pushState(null, "", url.toString())
     },
   }

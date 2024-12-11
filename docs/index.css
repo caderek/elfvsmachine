@@ -28,7 +28,7 @@
   --color-fg-lc: #a296bf;
   --color-fg-ok: #8d63e9;
   --color-fg-active: #d1fb82;
-  --color-fg-error: #fa431e;
+  --color-fg-external: #fa431e;
   --color-fg-accent: #fa1e4e;
   --color-fg-special: #eb4799;
 }
@@ -173,6 +173,10 @@ a:active {
 a:hover {
   color: var(--color-fg-accent);
   text-decoration: underline;
+}
+
+a.profile {
+  color: var(--color-fg);
 }
 
 footer {

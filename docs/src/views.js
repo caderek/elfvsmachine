@@ -2,6 +2,8 @@ import { secondsToTime, formatNum } from "./util.js"
 import { prepareYearData } from "./prepareYearData.js"
 import { prepareDayData } from "./prepareDayData.js"
 import { prepareAllTimeData } from "./prepareAllTimeData.js"
+import { prepareUserYearData } from "./prepareUserYearData.js"
+import { prepareUserAllTimeData } from "./prepareUserAllTimeData.js"
 
 export const DayButton = ({ day, year, disabled }) => `
   <li>
@@ -22,16 +24,16 @@ export const Loading = () => `
 const PartView = ({ data }) => {
   return data
     .map((entry) => {
-      const user = entry.gh
-        ? `<a href="https://github.com/${entry.gh}">${entry.user}</a>`
-        : entry.user
+      const gh = entry.gh
+        ? `<a href="https://github.com/${entry.gh}">GH</a>`
+        : ""
 
       return `
         <li>
           <span class="position">${entry.pos}:</span>
           <span class="points">${formatNum(entry.points)}</span>
           ${entry.time ? `<span class="time">${secondsToTime(entry.time)}` : ""}</span>
-          <span class="user">${user}</span>
+          <span class="user"><a class="profile" data-id="${entry.userId}" href="?profile=${entry.userId}">${entry.user}</a> ${gh}</span>
         </li>
       `
     })
@@ -135,4 +137,14 @@ export const AllTimeView = ({ yearsData, algo }) => {
       </ul>
     </section>
   `
+}
+
+export const UserYearView = ({ yearData, algo, year, userId }) => {
+  const data = prepareUserYearData(yearData, algo, userId)
+  return `User year data`
+}
+
+export const UserAllTimeView = ({ yearsData, algo, userId }) => {
+  const data = prepareUserAllTimeData(yearsData, algo, userId)
+  return `User all time data`
 }
