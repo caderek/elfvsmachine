@@ -38,27 +38,37 @@ async function load({ year, day, profile, algo, index, users, query }) {
     const yearsData = await Promise.all(Object.keys(index).map(getYearData))
 
     if (profile !== null) {
-      $main.innerHTML = UserAllTimeView({ yearsData, algo, userId: profile })
+      $main.innerHTML = UserAllTimeView({
+        yearsData,
+        userId: profile,
+        algo,
+        users,
+      })
       return
     }
 
-    $main.innerHTML = AllTimeView({ yearsData, algo })
+    $main.innerHTML = AllTimeView({ yearsData, algo, users })
     return
   }
 
   const yearData = await getYearData(year)
 
   if (profile !== null) {
-    $main.innerHTML = UserYearView({ yearData, algo, year, userId: profile })
+    $main.innerHTML = UserYearView({
+      yearData,
+      userId: profile,
+      algo,
+      users,
+    })
     return
   }
 
   if (day === 0) {
-    $main.innerHTML = YearView({ yearData, year, algo })
+    $main.innerHTML = YearView({ yearData, algo, users })
     return
   }
 
-  $main.innerHTML = DayView({ yearData, year, day, algo })
+  $main.innerHTML = DayView({ yearData, day, algo, users })
 }
 
 async function main() {
@@ -86,7 +96,15 @@ async function main() {
     const year = Number(target.dataset.year)
 
     $main.innerHTML = Loading()
-    load(year, 0, query.profile, initialAlgo, index, query)
+    load({
+      year,
+      day: 0,
+      profile: query.profile,
+      algo: initialAlgo,
+      index,
+      users,
+      query,
+    })
   })
 
   $days.addEventListener("click", (e) => {
@@ -99,7 +117,15 @@ async function main() {
     const day = Number(target.dataset.day)
 
     $main.innerHTML = Loading()
-    load(year, day, query.profile, initialAlgo, index, query)
+    load({
+      year,
+      day,
+      profile: query.profile,
+      algo: initialAlgo,
+      index,
+      users,
+      query,
+    })
   })
 
   $main.addEventListener("click", (e) => {
@@ -114,7 +140,15 @@ async function main() {
     e.preventDefault()
 
     const profile = e.target.dataset.id
-    load(query.year, 0, profile, initialAlgo, index, query)
+    load({
+      year: query.year,
+      day: 0,
+      profile,
+      algo: initialAlgo,
+      index,
+      users,
+      query,
+    })
   })
 }
 

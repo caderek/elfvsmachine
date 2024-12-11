@@ -1,14 +1,10 @@
 import { prepareSummary } from "./prepareSummary.js"
 import { prepareYearData } from "./prepareYearData.js"
 
-export function prepareAllTimeData(yearsData, algo) {
+export function prepareAllTimeData(yearsData, algo, users) {
   const allEntries = yearsData
-    .map((yearData) => Object.values(prepareYearData(yearData, algo)))
+    .map((yearData) => Object.values(prepareYearData(yearData, algo, users)))
     .flat(2)
-
-  const users = yearsData
-    .map((data) => data.users)
-    .reduce((allUsers, yearUsers) => ({ ...allUsers, ...yearUsers }), {})
 
   return prepareSummary(allEntries, users)
 }

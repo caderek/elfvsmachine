@@ -36,7 +36,7 @@ export function prepareSummary(allEntries, users) {
 
     final.push({
       pos,
-      userId,
+      userId: Number(userId),
       user: users[userId][0],
       gh: users[userId][1],
       points,

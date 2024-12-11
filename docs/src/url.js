@@ -22,7 +22,8 @@ export function initQueryString(index) {
     },
 
     get profile() {
-      return url.searchParams.get("profile")
+      const profile = url.searchParams.get("profile")
+      return profile ? Number(profile) : null
     },
 
     set year(val) {

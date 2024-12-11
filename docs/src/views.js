@@ -40,12 +40,12 @@ const PartView = ({ data }) => {
     .join("")
 }
 
-export const DayView = ({ yearData, day, year, algo, users }) => {
+export const DayView = ({ yearData, day, algo, users }) => {
   const data = prepareDayData(yearData, day, algo, users)
 
   return `
     <section class="both-stars">
-      <h2>Both Stars on <a href="https://adventofcode.com/${year}/day/${day}">Day ${day}, ${year}</a></h2>
+      <h2>Both Stars on <a href="https://adventofcode.com/${yearData.year}/day/${day}">Day ${day}, ${yearData.year}</a></h2>
       <p class="median">Median time: <strong>${secondsToTime(Math.round(data[2].medianTime))}</strong></p>
       <ul>
         <li>
@@ -58,7 +58,7 @@ export const DayView = ({ yearData, day, year, algo, users }) => {
       </ul>
     </section>
     <section class="first-star">
-      <h2>First Star on <a href="https://adventofcode.com/${year}/day/${day}">Day ${day}, ${year}</a></h2>
+      <h2>First Star on <a href="https://adventofcode.com/${yearData.year}/day/${day}">Day ${day}, ${yearData.year}</a></h2>
       <p class="median">Median time: <strong>${secondsToTime(Math.round(data[1].medianTime))}</strong></p>
       <ul>
         <li>
@@ -73,8 +73,8 @@ export const DayView = ({ yearData, day, year, algo, users }) => {
   `
 }
 
-export const YearView = ({ yearData, algo, year }) => {
-  const { first100, others } = prepareYearData(yearData, algo)
+export const YearView = ({ yearData, algo, users }) => {
+  const { first100, others } = prepareYearData(yearData, algo, users)
 
   const pointsWidth = Math.max(6, formatNum(first100[0].points).length)
   const posWidth = Math.max(4, formatNum(others[others.length - 1].pos).length)
@@ -82,7 +82,7 @@ export const YearView = ({ yearData, algo, year }) => {
 
   return `
     <section class="first-100" style="${style}">
-      <h2>Top 100 in <a href="https://adventofcode.com/${year}">${year}</a></h2>
+      <h2>Top 100 in <a href="https://adventofcode.com/${yearData.year}">${yearData.year}</a></h2>
       <ul>
         <li>
           <span class="position">Pos:</span>
@@ -106,8 +106,8 @@ export const YearView = ({ yearData, algo, year }) => {
   `
 }
 
-export const AllTimeView = ({ yearsData, algo }) => {
-  const { first100, others } = prepareAllTimeData(yearsData, algo)
+export const AllTimeView = ({ yearsData, algo, users }) => {
+  const { first100, others } = prepareAllTimeData(yearsData, algo, users)
 
   const pointsWidth = Math.max(6, formatNum(first100[0].points).length)
   const posWidth = Math.max(4, formatNum(others[others.length - 1].pos).length)
@@ -139,12 +139,14 @@ export const AllTimeView = ({ yearsData, algo }) => {
   `
 }
 
-export const UserYearView = ({ yearData, algo, year, userId }) => {
-  const data = prepareUserYearData(yearData, algo, userId)
+export const UserYearView = ({ yearData, userId, algo, users }) => {
+  const data = prepareUserYearData(yearData, userId, algo, users)
+  console.log(data)
   return `User year data`
 }
 
-export const UserAllTimeView = ({ yearsData, algo, userId }) => {
-  const data = prepareUserAllTimeData(yearsData, algo, userId)
+export const UserAllTimeView = ({ yearsData, userId, algo, users }) => {
+  const data = prepareUserAllTimeData(yearsData, userId, algo, users)
+  console.log(data)
   return `User all time data`
 }
