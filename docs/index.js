@@ -11,12 +11,13 @@ import {
   UserAllTimeView,
 } from "./src/views.js"
 import { initQueryString } from "./src/url.js"
+import { getUsers } from "./src/getUsers.js"
 
 const $years = document.querySelector("#years")
 const $days = document.querySelector("#days")
 const $main = document.querySelector("main")
 
-async function load(year, day, profile, algo, index, query) {
+async function load({ year, day, profile, algo, index, users, query }) {
   query.year = year
   query.day = day
   query.profile = profile
@@ -62,10 +63,19 @@ async function load(year, day, profile, algo, index, query) {
 
 async function main() {
   const index = await getIndex()
+  const users = await getUsers()
   const query = initQueryString(index)
   const initialAlgo = "median"
 
-  await load(query.year, query.day, query.profile, initialAlgo, index, query)
+  await load({
+    year: query.year,
+    day: query.day,
+    profile: query.profile,
+    algo: initialAlgo,
+    index,
+    users,
+    query,
+  })
 
   $years.addEventListener("click", (e) => {
     if (!e.target.tagName || e.target?.tagName.toLowerCase() !== "button") {

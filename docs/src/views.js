@@ -40,8 +40,8 @@ const PartView = ({ data }) => {
     .join("")
 }
 
-export const DayView = ({ yearData, day, year, algo }) => {
-  const data = prepareDayData(yearData, day, algo)
+export const DayView = ({ yearData, day, year, algo, users }) => {
+  const data = prepareDayData(yearData, day, algo, users)
 
   return `
     <section class="both-stars">

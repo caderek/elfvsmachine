@@ -51,6 +51,7 @@ function prepareDay(rawData) {
 export function prepareData() {
   const dayFiles = fs.readdirSync(config.RAW_DATA_DIR)
   const byYear = {}
+  let allUsers = {}
 
   for (const file of dayFiles) {
     const [year, day] = file.match(/\d+/g).map(Number)
@@ -61,12 +62,12 @@ export function prepareData() {
     const { users, results } = prepareDay(rawData)
 
     if (!byYear[year]) {
-      byYear[year] = { users: {}, days: {} }
+      byYear[year] = {}
     }
 
-    byYear[year].users = { ...byYear[year].users, ...users }
+    allUsers = { ...allUsers, ...users }
 
-    byYear[year].days[day] = results
+    byYear[year][day] = results
   }
 
   if (!fs.existsSync(config.DATA_DIR)) {
@@ -79,8 +80,13 @@ export function prepareData() {
     const filePath = path.join(config.DATA_DIR, `${year}.json`)
     fs.writeFileSync(filePath, JSON.stringify(data))
 
-    index[year] = Math.max(...Object.keys(data.days).map(Number))
+    index[year] = Math.max(...Object.keys(data).map(Number))
   }
+
+  fs.writeFileSync(
+    path.join(config.DATA_DIR, "users.json"),
+    JSON.stringify(allUsers),
+  )
 
   fs.writeFileSync(
     path.join(config.DATA_DIR, "index.json"),
