@@ -22,8 +22,8 @@ export const Loading = () => `
 const PartView = ({ data }) => {
   return data
     .map((entry) => {
-      const user = entry.link
-        ? `<a href="${entry.link}">${entry.user}</a>`
+      const user = entry.gh
+        ? `<a href="https://github.com/${entry.gh}">${entry.user}</a>`
         : entry.user
 
       return `

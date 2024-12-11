@@ -26,7 +26,7 @@ function preparePartData(partData, users, algo) {
       pos,
       userId,
       user: users[userId][0],
-      link: users[userId][1],
+      gh: users[userId][1],
       time,
       points,
     })

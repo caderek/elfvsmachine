@@ -16,8 +16,10 @@ function prepareScores(results) {
     })
 }
 
-const isExternalLink = (link) => {
-  return link && link.startsWith("http")
+const getGithubUsername = (link) => {
+  return link && link.startsWith("https://github.com/")
+    ? link.replace("https://github.com/", "")
+    : null
 }
 
 function prepareUsers(entries) {
@@ -26,7 +28,7 @@ function prepareUsers(entries) {
   for (const { userId, user, link } of entries) {
     users[userId] = [
       user.replace("(AoC++)", "").replace(" (Sponsor)", "").trim(),
-      isExternalLink(link) ? link : null,
+      getGithubUsername(link),
     ]
   }
 

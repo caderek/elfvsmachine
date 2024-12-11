@@ -38,7 +38,7 @@ export function prepareSummary(allEntries, users) {
       pos,
       userId,
       user: users[userId][0],
-      link: users[userId][1],
+      gh: users[userId][1],
       points,
     })
 
