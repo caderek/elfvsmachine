@@ -48,7 +48,20 @@ function prepareDay(rawData) {
   }
 }
 
+function updateIndexHtml(timestamp) {
+  const indexPath = path.join(config.PUBLIC_DIR, "index.html")
+  const html = fs.readFileSync(indexPath, {
+    encoding: "utf8",
+  })
+
+  const updatePattern = /data-last-update=".*?"/
+  const newHtml = html.replace(updatePattern, `data-last-update="${timestamp}"`)
+
+  fs.writeFileSync(indexPath, newHtml)
+}
+
 export function prepareData() {
+  const timestamp = Date.now()
   const dayFiles = fs.readdirSync(config.RAW_DATA_DIR)
   const byYear = {}
   let allUsers = {}
@@ -83,13 +96,23 @@ export function prepareData() {
     index[year] = Math.max(...Object.keys(data).map(Number))
   }
 
+  const oldFiles = fs
+    .readdirSync(config.DATA_DIR)
+    .filter((name) => name.startsWith("users") || name.startsWith("index"))
+
+  for (const file of oldFiles) {
+    fs.rmSync(path.join(config.DATA_DIR, file))
+  }
+
   fs.writeFileSync(
-    path.join(config.DATA_DIR, "users.json"),
+    path.join(config.DATA_DIR, `users-${timestamp}.json`),
     JSON.stringify(allUsers),
   )
 
   fs.writeFileSync(
-    path.join(config.DATA_DIR, "index.json"),
+    path.join(config.DATA_DIR, `index-${timestamp}.json`),
     JSON.stringify(index),
   )
+
+  updateIndexHtml(timestamp)
 }

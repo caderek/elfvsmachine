@@ -12,10 +12,12 @@ import {
 } from "./src/views.js"
 import { initQueryString } from "./src/url.js"
 import { getUsers } from "./src/getUsers.js"
+import { formatDate } from "./src/util.js"
 
 const $years = document.querySelector("#years")
 const $days = document.querySelector("#days")
 const $main = document.querySelector("main")
+const $lastUpdate = document.querySelector("#last-update")
 
 async function load({ year, day, profile, algo, index, users, query }) {
   query.year = year
@@ -72,8 +74,12 @@ async function load({ year, day, profile, algo, index, users, query }) {
 }
 
 async function main() {
-  const index = await getIndex()
-  const users = await getUsers()
+  const lastUpdate = Number(document.body.dataset.lastUpdate)
+  console.log($lastUpdate)
+  $lastUpdate.textContent = formatDate(new Date(lastUpdate))
+
+  const index = await getIndex(lastUpdate)
+  const users = await getUsers(lastUpdate)
   const query = initQueryString(index)
   const initialAlgo = "median"
 

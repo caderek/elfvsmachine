@@ -26,7 +26,7 @@ export async function fetchAll() {
 
   const { currentYear, currentDay } = getCurrent()
 
-  for (let year = config.START_FROM__YEAR; year <= currentYear; year++) {
+  for (let year = config.START_FROM_YEAR; year <= currentYear; year++) {
     const maxDay = year === currentYear ? currentDay : 25
     await fetchYear(year, doneByYear[year] ?? new Set(), maxDay)
   }

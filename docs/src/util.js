@@ -27,3 +27,16 @@ export function calculateMedian(values) {
 export function formatNum(num) {
   return new Intl.NumberFormat("en-US").format(num)
 }
+
+/**
+ * @param {Date} date
+ */
+export function formatDate(date) {
+  return new Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  }).format(date)
+}

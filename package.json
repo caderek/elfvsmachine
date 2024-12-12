@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "fetch": "node scripts/fetch.js",
-    "dev": "npm run fetch && npx @11ty/eleventy-dev-server --dir=docs"
+    "start": "npx @11ty/eleventy-dev-server --dir=docs",
+    "fetch": "node scripts/fetch.js"
   },
   "type": "module",
   "keywords": ["aoc"],

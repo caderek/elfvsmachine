@@ -51,7 +51,7 @@ export const DayView = ({ yearData, day, algo, users }) => {
         <li>
           <span class="position">Pos:</span>
           <span class="points">Points</span>
-          <span class="points">Time</span>
+          <span class="time">Time</span>
           <span class="user">User</span>
         </li>
         ${PartView({ data: data[2]?.entries ?? [] })}
@@ -64,7 +64,7 @@ export const DayView = ({ yearData, day, algo, users }) => {
         <li>
           <span class="position">Pos:</span>
           <span class="points">Points</span>
-          <span class="points">Time</span>
+          <span class="time">Time</span>
           <span class="user">User</span>
         </li>
         ${PartView({ data: data[1]?.entries ?? [] })}

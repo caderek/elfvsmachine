@@ -1,4 +1,4 @@
-export async function getIndex() {
-  const res = await fetch("data/index.json")
+export async function getIndex(lastUpdate) {
+  const res = await fetch(`data/index-${lastUpdate}.json`)
   return res.json()
 }
