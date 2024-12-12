@@ -31,6 +31,7 @@
   --color-fg-error: #fa431e;
   --color-fg-accent: #fa1e4e;
   --color-fg-special: #eb4799;
+  --color-border: #241e2f;
 }
 
 * {
@@ -175,6 +176,10 @@ a:hover {
   text-decoration: underline;
 }
 
+a.profile {
+  color: var(--color-fg);
+}
+
 footer {
   font-size: var(--font-s);
   text-align: center;
@@ -206,6 +211,41 @@ footer {
 
 .median strong {
   font-weight: 400;
+}
+
+.error {
+  color: var(--color-fg-error);
+}
+
+.user-summary {
+  font-size: var(--font-m);
+  margin-bottom: var(--space-l);
+}
+
+table {
+  border-collapse: collapse;
+  border: solid 1px var(--color-border);
+}
+
+td {
+  padding: var(--space-2xs) var(--space-m);
+  text-align: right;
+  border-right: solid 1px var(--color-border);
+}
+
+thead td {
+  text-align: center;
+  border-bottom: solid 1px var(--color-border);
+  color: var(--color-fg-lc);
+  padding: var(--space-xs) var(--space-m);
+}
+
+td strong {
+  font-weight: 400;
+}
+
+tbody > tr:nth-child(odd) {
+  background: var(--color-bg-lc);
 }
 
 @media screen and (max-width: 63.99rem) {

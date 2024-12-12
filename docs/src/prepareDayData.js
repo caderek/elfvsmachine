@@ -1,4 +1,4 @@
-import { secondsToTime, calculateMedian } from "./util.js"
+import { calculateMedian } from "./util.js"
 
 function preparePartData(partData, users, algo) {
   const medianTime = calculateMedian(partData.map(([_, sec]) => sec))
@@ -40,11 +40,11 @@ function preparePartData(partData, users, algo) {
   }
 }
 
-export function prepareDayData(yearData, day, algo) {
-  const dayData = yearData.days[day]
+export function prepareDayData(yearData, day, algo, users) {
+  const dayData = yearData.entries[day]
 
   return {
-    1: preparePartData(dayData["1"] ?? [], yearData.users, algo),
-    2: preparePartData(dayData["2"] ?? [], yearData.users, algo),
+    1: preparePartData(dayData["1"] ?? [], users, algo),
+    2: preparePartData(dayData["2"] ?? [], users, algo),
   }
 }

@@ -6,7 +6,8 @@ export async function getYearData(year) {
   }
 
   const res = await fetch(`data/${year}.json`)
-  const data = await res.json()
+  const entries = await res.json()
+  const data = { year, entries }
 
   cache[year] = data
   return data
