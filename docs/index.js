@@ -75,13 +75,14 @@ async function load({ year, day, profile, algo, index, users, query }) {
 
 async function main() {
   const lastUpdate = Number(document.body.dataset.lastUpdate)
-  console.log($lastUpdate)
   $lastUpdate.textContent = formatDate(new Date(lastUpdate))
 
   const index = await getIndex(lastUpdate)
   const users = await getUsers(lastUpdate)
   const query = initQueryString(index)
   const initialAlgo = "median"
+
+  $main.innerHTML = Loading()
 
   await load({
     year: query.year,

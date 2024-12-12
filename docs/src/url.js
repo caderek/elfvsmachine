@@ -12,7 +12,7 @@ export function initQueryString(index) {
       }
 
       const val = Number(year)
-      return years.has(val) ? val : defaultYear
+      return val === 0 || years.has(val) ? val : defaultYear
     },
 
     get day() {
