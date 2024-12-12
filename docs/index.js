@@ -143,7 +143,7 @@ async function main() {
     load({
       year: query.year,
       day: 0,
-      profile,
+      profile: Number(profile),
       algo: initialAlgo,
       index,
       users,
