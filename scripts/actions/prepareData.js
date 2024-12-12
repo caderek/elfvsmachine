@@ -61,6 +61,9 @@ function updateIndexHtml(timestamp) {
 }
 
 export function prepareData() {
+  fs.rmSync(config.DATA_DIR, { recursive: true })
+  fs.mkdirSync(config.DATA_DIR, { recursive: true })
+
   const timestamp = Date.now()
   const dayFiles = fs.readdirSync(config.RAW_DATA_DIR)
   const byYear = {}
@@ -83,25 +86,13 @@ export function prepareData() {
     byYear[year][day] = results
   }
 
-  if (!fs.existsSync(config.DATA_DIR)) {
-    fs.mkdirSync(config.DATA_DIR, { recursive: true })
-  }
-
   const index = {}
 
   for (const [year, data] of Object.entries(byYear)) {
-    const filePath = path.join(config.DATA_DIR, `${year}.json`)
+    const filePath = path.join(config.DATA_DIR, `${year}-${timestamp}.json`)
     fs.writeFileSync(filePath, JSON.stringify(data))
 
     index[year] = Math.max(...Object.keys(data).map(Number))
-  }
-
-  const oldFiles = fs
-    .readdirSync(config.DATA_DIR)
-    .filter((name) => name.startsWith("users") || name.startsWith("index"))
-
-  for (const file of oldFiles) {
-    fs.rmSync(path.join(config.DATA_DIR, file))
   }
 
   fs.writeFileSync(

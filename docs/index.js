@@ -19,7 +19,16 @@ const $days = document.querySelector("#days")
 const $main = document.querySelector("main")
 const $lastUpdate = document.querySelector("#last-update")
 
-async function load({ year, day, profile, algo, index, users, query }) {
+async function load({
+  year,
+  day,
+  profile,
+  algo,
+  index,
+  users,
+  query,
+  lastUpdate,
+}) {
   query.year = year
   query.day = day
   query.profile = profile
@@ -37,7 +46,9 @@ async function load({ year, day, profile, algo, index, users, query }) {
           .join("")
 
   if (year === 0) {
-    const yearsData = await Promise.all(Object.keys(index).map(getYearData))
+    const yearsData = await Promise.all(
+      Object.keys(index).map((year) => getYearData(year, lastUpdate)),
+    )
 
     if (profile !== null) {
       $main.innerHTML = UserAllTimeView({
@@ -53,7 +64,7 @@ async function load({ year, day, profile, algo, index, users, query }) {
     return
   }
 
-  const yearData = await getYearData(year)
+  const yearData = await getYearData(year, lastUpdate)
 
   if (profile !== null) {
     $main.innerHTML = UserYearView({
@@ -92,6 +103,7 @@ async function main() {
     index,
     users,
     query,
+    lastUpdate,
   })
 
   $years.addEventListener("click", (e) => {
@@ -111,6 +123,7 @@ async function main() {
       index,
       users,
       query,
+      lastUpdate,
     })
   })
 
@@ -132,6 +145,7 @@ async function main() {
       index,
       users,
       query,
+      lastUpdate,
     })
   })
 
@@ -155,6 +169,7 @@ async function main() {
       index,
       users,
       query,
+      lastUpdate,
     })
   })
 }
