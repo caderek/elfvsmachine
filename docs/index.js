@@ -4,6 +4,7 @@ import {
   DayView,
   YearView,
   AllTimeView,
+  AlgoButton,
   DayButton,
   YearButton,
   Loading,
@@ -14,10 +15,12 @@ import { initQueryString } from "./src/url.js"
 import { getUsers } from "./src/getUsers.js"
 import { formatDate } from "./src/util.js"
 
+const $algo = document.querySelector("#algo")
 const $years = document.querySelector("#years")
 const $days = document.querySelector("#days")
 const $main = document.querySelector("main")
 const $lastUpdate = document.querySelector("#last-update")
+const $infos = document.querySelectorAll('[data-type="algo"]')
 
 async function load({
   year,
@@ -32,6 +35,12 @@ async function load({
   query.year = year
   query.day = day
   query.profile = profile
+  query.algo = algo
+
+  $algo.innerHTML = ["median", "inverse", "original"]
+    .sort((a, b) => b - a)
+    .map((a) => AlgoButton({ algo: a, disabled: a === algo }))
+    .join("")
 
   $years.innerHTML = [0, ...Object.keys(index).map(Number)]
     .sort((a, b) => b - a)
@@ -91,9 +100,10 @@ async function main() {
   const index = await getIndex(lastUpdate)
   const users = await getUsers(lastUpdate)
   const query = initQueryString(index)
-  const initialAlgo = "median"
-  // const initialAlgo = "inverse"
-  // const initialAlgo = "original"
+
+  document
+    .querySelector(`[data-algo="${query.algo}"]`)
+    .removeAttribute("hidden")
 
   $main.innerHTML = Loading()
 
@@ -101,11 +111,40 @@ async function main() {
     year: query.year,
     day: query.day,
     profile: query.profile,
-    algo: initialAlgo,
+    algo: query.algo,
     index,
     users,
     query,
     lastUpdate,
+  })
+
+  $algo.addEventListener("click", (e) => {
+    if (!e.target.tagName || e.target?.tagName.toLowerCase() !== "button") {
+      return
+    }
+
+    const target = e.target
+    const algo = target.dataset.algo
+
+    $infos.forEach(($info) => {
+      if ($info.dataset.algo === algo) {
+        $info.removeAttribute("hidden")
+      } else {
+        $info.setAttribute("hidden", "")
+      }
+    })
+
+    $main.innerHTML = Loading()
+    load({
+      year: query.year,
+      day: query.day,
+      profile: query.profile,
+      algo,
+      index,
+      users,
+      query,
+      lastUpdate,
+    })
   })
 
   $years.addEventListener("click", (e) => {
@@ -121,7 +160,7 @@ async function main() {
       year,
       day: 0,
       profile: query.profile,
-      algo: initialAlgo,
+      algo: query.algo,
       index,
       users,
       query,
@@ -143,7 +182,7 @@ async function main() {
       year,
       day,
       profile: query.profile,
-      algo: initialAlgo,
+      algo: query.algo,
       index,
       users,
       query,
@@ -167,7 +206,7 @@ async function main() {
       year: query.year,
       day: 0,
       profile: Number(profile),
-      algo: initialAlgo,
+      algo: query.algo,
       index,
       users,
       query,

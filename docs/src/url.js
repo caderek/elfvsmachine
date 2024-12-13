@@ -4,6 +4,16 @@ export function initQueryString(index) {
   const defaultYear = Math.max(...years)
 
   return {
+    get algo() {
+      const algo = url.searchParams.get("algo")
+
+      if (algo === null) {
+        return "median"
+      }
+
+      return ["inverse", "original"].includes(algo) ? algo : "median"
+    },
+
     get year() {
       const year = url.searchParams.get("year")
 
@@ -24,6 +34,15 @@ export function initQueryString(index) {
     get profile() {
       const profile = url.searchParams.get("profile")
       return profile ? Number(profile) : null
+    },
+
+    set algo(val) {
+      if (["inverse", "original"].includes(val)) {
+        url.searchParams.set("algo", val)
+      } else {
+        url.searchParams.delete("algo")
+      }
+      window.history.pushState(null, "", url.toString())
     },
 
     set year(val) {

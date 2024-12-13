@@ -5,6 +5,12 @@ import { prepareAllTimeData } from "./prepareAllTimeData.js"
 import { prepareUserYearData } from "./prepareUserYearData.js"
 import { prepareUserAllTimeData } from "./prepareUserAllTimeData.js"
 
+export const AlgoButton = ({ algo, disabled }) => `
+  <li>
+    <button ${disabled ? "disabled" : ""} data-algo="${algo}">${algo.toUpperCase()}</button>
+  </li>
+`
+
 export const DayButton = ({ day, year, disabled }) => `
   <li>
     <button ${disabled ? "disabled" : ""} data-year="${year}" data-day="${day}">${day === 0 ? "ALL" : day}</button>

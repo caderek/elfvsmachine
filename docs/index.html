@@ -58,9 +58,12 @@
           <a href="https://adventofcode.com">Advent of Code</a>
         </p>
       </header>
-      <section id="info" class="info">
+      <nav>
+        <ul id="algo"></ul>
+      </nav>
+      <section data-type="algo" hidden data-algo="median" class="info">
         <p>
-          The algorithm awards the points
+          MEDIAN algorithm awards the points
           <strong>based on the difficulty of the puzzle</strong> and the
           completion order. I believe it could help mitigate some of the effects
           of LLM usage, but even if it won't, it's a fun take on the global
@@ -83,6 +86,39 @@
         <p>
           'Diff' shows the difference in position compared to the original
           leaderboard.
+        </p>
+      </section>
+      <section data-type="algo" hidden data-algo="inverse" class="info">
+        <p>
+          INVERSE algorithm
+          <strong
+            >gives the first person points equal to the seconds spent by the
+            last person</strong
+          >, second person points equal to the seconds spent by the second to
+          last person, and so forth. It's ment as a fun twist on the
+          leaderboard, not to be treated seriously.
+        </p>
+        <p>
+          For example, if time spent looks like
+          <code>1st: 60s, 2nd: 70s, ..., 99th: 290s, 100th: 300s</code>, then
+          the points are awarded like this:
+          <code>1st: 300, 2nd: 290, ..., 99th: 70, 100th: 60</code>.
+        </p>
+        <p>
+          'Diff' shows the difference in position compared to the original
+          leaderboard.
+        </p>
+      </section>
+      <section data-type="algo" hidden data-algo="original" class="info">
+        <p>
+          ORIGINAL algorithm
+          <strong>follows the original leaderboard exactly</strong>, i.e. the
+          first person to get a star is awarded 100 points, the second 99
+          points, and so forth.
+        </p>
+        <p>
+          Additionally, you can see the places beyond firs 100 in the year
+          summary, and the "All Time" leaderboard!
         </p>
       </section>
       <nav>
