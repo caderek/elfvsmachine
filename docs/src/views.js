@@ -226,27 +226,29 @@ const UserDays = ({ stats, year }) => {
   })
 
   return `
-    <table>
-      <thead>
-        <tr>
-          <td rowspan="2">Day</td>
-          <td colspan="3">2nd star</td>
-          <td colspan="3">1st star</td>
-          <td rowspan="2">Sum</td>
-        </tr>
-        <tr>
-          <td>Pos</td>
-          <td>Time</td>
-          <td>Pts</td>
-          <td>Pos</td>
-          <td>Time</td>
-          <td>Pts</td>
-        </tr>
-      </thead>
-      <tbody>
-        ${days.join("")}
-      <tbody>
-    </table>
+    <div class="table-box">
+      <table>
+        <thead>
+          <tr>
+            <td rowspan="2">Day</td>
+            <td colspan="3">2nd star</td>
+            <td colspan="3">1st star</td>
+            <td rowspan="2">Sum</td>
+          </tr>
+          <tr>
+            <td>Pos</td>
+            <td>Time</td>
+            <td>Pts</td>
+            <td>Pos</td>
+            <td>Time</td>
+            <td>Pts</td>
+          </tr>
+        </thead>
+        <tbody>
+          ${days.join("")}
+        <tbody>
+      </table>
+    </div>
   `
 }
 
@@ -263,18 +265,20 @@ const UserYears = ({ stats }) => {
     })
 
   return `
-    <table>
-      <thead>
-        <tr>
-          <td>Year</td>
-          <td>Pos</td>
-          <td>Pts</td>
-        </tr>
-      </thead>
-      <tbody>
-        ${years.join("")}
-      <tbody>
-    </table>
+    <div class="table-box">
+      <table>
+        <thead>
+          <tr>
+            <td>Year</td>
+            <td>Pos</td>
+            <td>Pts</td>
+          </tr>
+        </thead>
+        <tbody>
+          ${years.join("")}
+        <tbody>
+      </table>
+    </div>
   `
 }
 
