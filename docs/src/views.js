@@ -287,7 +287,7 @@ export const UserYearView = ({ yearData, userId, algo, users }) => {
     ${UserProfile({ info: data.info, title: `${yearData.year} stats` })}
     ${UserSummary({ stats: data.yearStats, period: "day", posAdjective })}
     ${UserDays({ stats: data.daysStats, year: yearData.year })}
-    <p class="back"><a href="?">&lt; Back to leaderboard</a></p>
+    <p class="back"><a href="?algo=${algo}">&lt; Back to leaderboard</a></p>
   `
 }
 
@@ -297,6 +297,6 @@ export const UserAllTimeView = ({ yearsData, userId, algo, users }) => {
     ${UserProfile({ info: data.info, title: `All time stats` })}
     ${UserSummary({ stats: data.allTimeStats, period: "year", posAdjective: "Total" })}
     ${UserYears({ stats: data.yearsStats })}
-    <p class="back"><a href="?">&lt; Back to leaderboard</a></p>
+    <p class="back"><a href="?algo=${algo}">&lt; Back to leaderboard</a></p>
   `
 }
