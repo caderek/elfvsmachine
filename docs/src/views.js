@@ -42,28 +42,33 @@ const PartView = ({ data }) => {
 
 export const DayView = ({ yearData, day, algo, users }) => {
   const data = prepareDayData(yearData, day, algo, users)
+  const pointsWidth = Math.max(
+    3,
+    formatNum(data[2].entries[data[2].entries.length - 1].points).length,
+  )
+  const style = `--points-w: ${pointsWidth}ch;`
 
   return `
-    <section class="both-stars">
+    <section class="both-stars" style="${style}">
       <h2>Both Stars on <a href="https://adventofcode.com/${yearData.year}/day/${day}">Day ${day}, ${yearData.year}</a></h2>
       <p class="median">Median time: <strong>${secondsToTime(Math.round(data[2].medianTime))}</strong></p>
       <ul>
         <li>
           <span class="position">Pos:</span>
-          <span class="points">Points</span>
+          <span class="points">Pts</span>
           <span class="time">Time</span>
           <span class="user">User</span>
         </li>
         ${PartView({ data: data[2]?.entries ?? [] })}
       </ul>
     </section>
-    <section class="first-star">
+    <section class="first-star" style="${style}">
       <h2>First Star on <a href="https://adventofcode.com/${yearData.year}/day/${day}">Day ${day}, ${yearData.year}</a></h2>
       <p class="median">Median time: <strong>${secondsToTime(Math.round(data[1].medianTime))}</strong></p>
       <ul>
         <li>
           <span class="position">Pos:</span>
-          <span class="points">Points</span>
+          <span class="points">Pts</span>
           <span class="time">Time</span>
           <span class="user">User</span>
         </li>
@@ -140,9 +145,12 @@ export const AllTimeView = ({ yearsData, algo, users }) => {
 }
 
 const UserProfile = ({ info, title }) => {
+  const user = info.gh
+    ? `<a href="https://github.com/${info.gh}">${info.user}</a>`
+    : info.user
   return `
-    <section>
-      <h2>${title} for <a href="https://github.com/${info.gh}">${info.user}</a></h2>
+    <section class="user-info">
+      <h2>${title} for ${user}</h2>
     </section>
 `
 }
@@ -170,9 +178,11 @@ const UserDays = ({ stats, year }) => {
       <tr>
         <td><a href="?year=${year}&day=${day}">${day}</a></td>
         <td>${entry[2]?.pos ? `<strong>#${entry[2]?.pos}</strong>` : "-"}</td>
-        <td>${entry[2]?.points ?? "-"}</td>  
+        <td>${entry[2]?.time ? secondsToTime(entry[2].time) : "-"}</td>
+        <td>${entry[2]?.points ?? "-"}</td>
         <td>${entry[1]?.pos ? `<strong>#${entry[1]?.pos}</strong>` : "-"}</td>
-        <td>${entry[1]?.points ?? "-"}</td> 
+        <td>${entry[1]?.time ? secondsToTime(entry[1].time) : "-"}</td>
+        <td>${entry[1]?.points ?? "-"}</td>
         <td>${sum}</td>
       </tr>`
   })
@@ -182,14 +192,16 @@ const UserDays = ({ stats, year }) => {
       <thead>
         <tr>
           <td rowspan="2">Day</td>
-          <td colspan="2">2nd star</td>
-          <td colspan="2">1st star</td>
+          <td colspan="3">2nd star</td>
+          <td colspan="3">1st star</td>
           <td rowspan="2">Sum</td>
         </tr>
         <tr>
           <td>Pos</td>
+          <td>Time</td>
           <td>Pts</td>
           <td>Pos</td>
+          <td>Time</td>
           <td>Pts</td>
         </tr>
       </thead>
@@ -237,7 +249,7 @@ export const UserYearView = ({ yearData, userId, algo, users }) => {
     ${UserProfile({ info: data.info, title: `${yearData.year} stats` })}
     ${UserSummary({ stats: data.yearStats, period: "day", posAdjective })}
     ${UserDays({ stats: data.daysStats, year: yearData.year })}
-    <ul>
+    <p class="back"><a href="?">&lt; Back to leaderboard</a></p>
   `
 }
 
@@ -247,5 +259,6 @@ export const UserAllTimeView = ({ yearsData, userId, algo, users }) => {
     ${UserProfile({ info: data.info, title: `All time stats` })}
     ${UserSummary({ stats: data.allTimeStats, period: "year", posAdjective: "Total" })}
     ${UserYears({ stats: data.yearsStats })}
+    <p class="back"><a href="?">&lt; Back to leaderboard</a></p>
   `
 }

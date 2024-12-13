@@ -248,7 +248,7 @@ table {
 }
 
 td {
-  padding: var(--space-2xs) var(--space-m);
+  padding: var(--space-2xs) calc(var(--space-s) + var(--space-2xs));
   text-align: right;
   border-right: solid 1px var(--color-border);
 }
@@ -257,7 +257,7 @@ thead td {
   text-align: center;
   border-bottom: solid 1px var(--color-border);
   color: var(--color-fg-lc);
-  padding: var(--space-xs) var(--space-m);
+  padding: var(--space-xs) calc(var(--space-s) + var(--space-2xs));
 }
 
 td strong {
@@ -270,6 +270,10 @@ tbody > tr:nth-child(odd) {
 
 .loading {
   margin: var(--space-l) 0;
+}
+
+.back {
+  margin-top: var(--space-m);
 }
 
 @media screen and (max-width: 63.99rem) {
