@@ -2,7 +2,6 @@ import fs from "node:fs"
 import path from "node:path"
 
 import { config } from "../../config.js"
-import { calculateMedian } from "./util.js"
 
 function prepareScores(results) {
   if (results.length < 100) {
@@ -12,7 +11,7 @@ function prepareScores(results) {
   return results
     .toSorted((a, b) => a.time - b.time)
     .map((result) => {
-      return [result.userId, result.time]
+      return [result.userId, result.time, result.place]
     })
 }
 

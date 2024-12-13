@@ -5,22 +5,14 @@ function preparePartData(partData, users, algo) {
 
   const entries = []
 
-  let pos = 0
-  let jump = 1
-  let prevTime = -1
-
-  for (const [i, [userId, time]] of partData.entries()) {
-    if (time === prevTime) {
-      jump++
-    } else {
-      pos += jump
-      jump = 1
-    }
-
+  for (const [i, [userId, time, pos]] of partData.entries()) {
+    const originalPoints = 101 - pos
     let points =
-      algo === "inverse"
-        ? partData[partData.length - i - 1][1]
-        : Math.max(1, Math.round(((101 - pos) / 100) * medianTime))
+      algo === "original"
+        ? originalPoints
+        : algo === "inverse"
+          ? partData[partData.length - i - 1][1]
+          : Math.max(1, Math.floor(((101 - pos) / 100) * medianTime))
 
     entries.push({
       pos,
@@ -29,9 +21,8 @@ function preparePartData(partData, users, algo) {
       gh: users[userId][1],
       time,
       points,
+      originalPoints,
     })
-
-    prevTime = time
   }
 
   return {

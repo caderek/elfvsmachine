@@ -40,3 +40,10 @@ export function formatDate(date) {
     minute: "2-digit",
   }).format(date)
 }
+
+export function formatDiff(num) {
+  if (num === 0) {
+    return "—"
+  }
+  return new Intl.NumberFormat("en-US", { signDisplay: "always" }).format(num)
+}

@@ -92,6 +92,8 @@ async function main() {
   const users = await getUsers(lastUpdate)
   const query = initQueryString(index)
   const initialAlgo = "median"
+  // const initialAlgo = "inverse"
+  // const initialAlgo = "original"
 
   $main.innerHTML = Loading()
 

@@ -28,7 +28,9 @@
   --color-fg-lc: #a296bf;
   --color-fg-ok: #8d63e9;
   --color-fg-active: #d1fb82;
-  --color-fg-error: #fa431e;
+  --color-fg-good: #9ece6a;
+  --color-fg-warn: #e0af68;
+  --color-fg-bad: #fa431e;
   --color-fg-accent: #fa1e4e;
   --color-fg-special: #eb4799;
   --color-border: #241e2f;
@@ -111,6 +113,8 @@ nav ul {
 main section {
   --points-w: 6ch;
   --pos-w: 4ch;
+  --diff-w: 6ch;
+  --user-w: 10ch;
 }
 
 main ul {
@@ -161,6 +165,16 @@ code {
 
 .time {
   width: 8ch;
+  color: var(--color-fg-lc);
+}
+
+.user {
+  min-width: var(--user-w);
+}
+
+.diff {
+  width: var(--diff-w);
+  text-align: right;
   color: var(--color-fg-lc);
 }
 
@@ -274,6 +288,14 @@ tbody > tr:nth-child(odd) {
 
 .back {
   margin-top: var(--space-m);
+}
+
+.good {
+  color: var(--color-fg-good);
+}
+
+.bad {
+  color: var(--color-fg-bad);
 }
 
 @media screen and (max-width: 63.99rem) {

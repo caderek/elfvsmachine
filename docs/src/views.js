@@ -1,4 +1,4 @@
-import { secondsToTime, formatNum } from "./util.js"
+import { secondsToTime, formatNum, formatDiff } from "./util.js"
 import { prepareYearData } from "./prepareYearData.js"
 import { prepareDayData } from "./prepareDayData.js"
 import { prepareAllTimeData } from "./prepareAllTimeData.js"
@@ -21,19 +21,31 @@ export const Loading = () => `
   <section class="loading">Loading...</section>
 `
 
-const PartView = ({ data }) => {
+const PartView = ({ data, showDiff }) => {
   return data
     .map((entry) => {
       const gh = entry.gh
         ? `<a href="https://github.com/${entry.gh}">GH</a>`
         : ""
 
+      const time = entry.time
+        ? `<span class="time">${secondsToTime(entry.time)}</span>`
+        : ""
+
+      const diffVal = showDiff ? entry.originalPos - entry.pos : 0
+      const diffClass = diffVal > 0 ? "good" : diffVal < 0 ? "bad" : ""
+
+      const diff = showDiff
+        ? `<span class="diff ${diffClass}">${formatDiff(diffVal)}</span>`
+        : ""
+
       return `
         <li>
           <span class="position">${entry.pos}:</span>
           <span class="points">${formatNum(entry.points)}</span>
-          ${entry.time ? `<span class="time">${secondsToTime(entry.time)}` : ""}</span>
+          ${time}
           <span class="user"><a class="profile" data-id="${entry.userId}" href="?profile=${entry.userId}">${entry.user}</a> ${gh}</span>
+          ${diff}
         </li>
       `
     })
@@ -83,7 +95,15 @@ export const YearView = ({ yearData, algo, users }) => {
 
   const pointsWidth = Math.max(6, formatNum(first100[0].points).length)
   const posWidth = Math.max(4, formatNum(others[others.length - 1].pos).length)
-  const style = `--points-w: ${pointsWidth}ch; --pos-w: ${posWidth}ch`
+  const userWidth = Math.max(
+    ...[...first100, ...others].map((x) => x.user.length + (x.gh ? 3 : 0)),
+  )
+  const style = `--points-w: ${pointsWidth}ch; --pos-w: ${posWidth}ch; --user-w: ${userWidth}ch`
+  const showDiff = algo !== "original"
+
+  const diffLabel = showDiff
+    ? `<span class="diff" title="Change in comparison to the original leaderboard">Diff</span>`
+    : ``
 
   return `
     <section class="first-100" style="${style}">
@@ -93,8 +113,9 @@ export const YearView = ({ yearData, algo, users }) => {
           <span class="position">Pos:</span>
           <span class="points">Points</span>
           <span class="user">User</span>
+          ${diffLabel}
         </li>
-        ${PartView({ data: first100 })}
+        ${PartView({ data: first100, showDiff })}
       </ul>
     </section>
     <section class="others" style="${style}">
@@ -104,8 +125,9 @@ export const YearView = ({ yearData, algo, users }) => {
           <span class="position">Pos:</span>
           <span class="points">Points</span>
           <span class="user">User</span>
+          ${diffLabel}
         </li>
-        ${PartView({ data: others })}
+        ${PartView({ data: others, showDiff })}
       </ul>
     </section>
   `
@@ -116,7 +138,15 @@ export const AllTimeView = ({ yearsData, algo, users }) => {
 
   const pointsWidth = Math.max(6, formatNum(first100[0].points).length)
   const posWidth = Math.max(4, formatNum(others[others.length - 1].pos).length)
-  const style = `--points-w: ${pointsWidth}ch; --pos-w: ${posWidth}ch`
+  const userWidth = Math.max(
+    ...[...first100, ...others].map((x) => x.user.length + (x.gh ? 3 : 0)),
+  )
+  const style = `--points-w: ${pointsWidth}ch; --pos-w: ${posWidth}ch; --user-w:${userWidth}ch`
+  const showDiff = algo !== "original"
+
+  const diffLabel = showDiff
+    ? `<span class="diff" title="Change in comparison to the original leaderboard">Diff</span>`
+    : ``
 
   return `
     <section class="first-100" style="${style}">
@@ -126,8 +156,9 @@ export const AllTimeView = ({ yearsData, algo, users }) => {
           <span class="position">Pos:</span>
           <span class="points">Points</span>
           <span class="user">User</span>
+          ${diffLabel}
         </li>
-        ${PartView({ data: first100 })}
+        ${PartView({ data: first100, showDiff })}
       </ul>
     </section>
     <section class="others" style="${style}">
@@ -137,8 +168,9 @@ export const AllTimeView = ({ yearsData, algo, users }) => {
           <span class="position">Pos:</span>
           <span class="points">Points</span>
           <span class="user">User</span>
+          ${diffLabel}
         </li>
-        ${PartView({ data: others })}
+        ${PartView({ data: others, showDiff })}
       </ul>
     </section>
   `

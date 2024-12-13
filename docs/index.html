@@ -47,7 +47,7 @@
     <title>Elf vs Machine - unofficial AoC leaderboard</title>
     <link href="index.css" rel="stylesheet" />
   </head>
-  <body data-last-update="1733980888781">
+  <body data-last-update="1734049206089">
     <div>
       <header>
         <a href="?">
@@ -76,9 +76,13 @@
         <p>
           Full formula for each star:
           <code
-            >points = max(1, round((101 - position) / 100 *
+            >points = max(1, floor((101 - position) / 100 *
             median_time_in_seconds))</code
           >
+        </p>
+        <p>
+          'Diff' shows the difference in position compared to the original
+          leaderboard.
         </p>
       </section>
       <nav>
