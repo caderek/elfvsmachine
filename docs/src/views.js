@@ -99,8 +99,6 @@ export const DayView = ({ yearData, day, algo, users }) => {
 export const YearView = ({ yearData, algo, users }) => {
   const { first100, others } = prepareYearData(yearData, algo, users)
 
-  console.log({ first100 })
-
   const pointsWidth = Math.max(6, formatNum(first100[0].points).length)
   const posWidth = Math.max(4, formatNum(others[others.length - 1].pos).length)
   const userWidth = Math.max(
@@ -143,7 +141,6 @@ export const YearView = ({ yearData, algo, users }) => {
 
 export const AllTimeView = ({ yearsData, algo, users }) => {
   const { first100, others } = prepareAllTimeData(yearsData, algo, users)
-  console.log({ first100 })
 
   const pointsWidth = Math.max(6, formatNum(first100[0].points).length)
   const posWidth = Math.max(4, formatNum(others[others.length - 1].pos).length)
@@ -224,7 +221,7 @@ const UserDays = ({ stats, year }) => {
         <td>${entry[1]?.pos ? `<strong>#${entry[1]?.pos}</strong>` : "-"}</td>
         <td>${entry[1]?.time ? secondsToTime(entry[1].time) : "-"}</td>
         <td>${entry[1]?.points ?? "-"}</td>
-        <td>${sum}</td>
+        <td>${sum || "-"}</td>
       </tr>`
   })
 
@@ -263,7 +260,9 @@ const UserYears = ({ stats }) => {
       <tr>
         <td><a href="?year=${year}&day=0">${year}</a></td>
         <td>${entry?.pos ? `<strong>#${entry.pos}</strong>` : "-"}</td>
-        <td>${entry?.points ?? "-"}</td>  
+        <td>${entry?.points ?? "-"}</td>
+        <td>${entry?.timesOnLeaderboard[2] || "-"}</td>
+        <td>${entry?.timesOnLeaderboard[1] || "-"}</td>
       </tr>`
     })
 
@@ -272,9 +271,14 @@ const UserYears = ({ stats }) => {
       <table>
         <thead>
           <tr>
-            <td>Year</td>
-            <td>Pos</td>
-            <td>Pts</td>
+            <td rowspan="2">Year</td>
+            <td rowspan="2">Pos</td>
+            <td rowspan="2">Pts</td>
+            <td colspan="2">Times in top 100</td>
+          </tr>
+          <tr>
+            <td>2nd star</td>
+            <td>1st star</td>
           </tr>
         </thead>
         <tbody>
