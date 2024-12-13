@@ -63,10 +63,7 @@ const PartView = ({ data, showDiff }) => {
 
 export const DayView = ({ yearData, day, algo, users }) => {
   const data = prepareDayData(yearData, day, algo, users)
-  const pointsWidth = Math.max(
-    3,
-    formatNum(data[2].entries[data[2].entries.length - 1].points).length,
-  )
+  const pointsWidth = Math.max(3, formatNum(data[2].entries[0].points).length)
   const style = `--points-w: ${pointsWidth}ch;`
 
   return `
@@ -102,7 +99,7 @@ export const DayView = ({ yearData, day, algo, users }) => {
 export const YearView = ({ yearData, algo, users }) => {
   const { first100, others } = prepareYearData(yearData, algo, users)
 
-  const pointsWidth = Math.max(6, formatNum(first100[0].points).length)
+  const pointsWidth = Math.max(3, formatNum(first100[0].points).length)
   const posWidth = Math.max(4, formatNum(others[others.length - 1].pos).length)
   const userWidth = Math.max(
     ...[...first100, ...others].map((x) => x.user.length + (x.gh ? 3 : 0)),
