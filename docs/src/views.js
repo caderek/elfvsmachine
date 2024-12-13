@@ -99,6 +99,8 @@ export const DayView = ({ yearData, day, algo, users }) => {
 export const YearView = ({ yearData, algo, users }) => {
   const { first100, others } = prepareYearData(yearData, algo, users)
 
+  console.log({ first100 })
+
   const pointsWidth = Math.max(6, formatNum(first100[0].points).length)
   const posWidth = Math.max(4, formatNum(others[others.length - 1].pos).length)
   const userWidth = Math.max(
@@ -141,6 +143,7 @@ export const YearView = ({ yearData, algo, users }) => {
 
 export const AllTimeView = ({ yearsData, algo, users }) => {
   const { first100, others } = prepareAllTimeData(yearsData, algo, users)
+  console.log({ first100 })
 
   const pointsWidth = Math.max(6, formatNum(first100[0].points).length)
   const posWidth = Math.max(4, formatNum(others[others.length - 1].pos).length)

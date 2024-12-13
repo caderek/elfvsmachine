@@ -28,18 +28,38 @@ function addPositions(entries, pointsKey, posKey) {
 export function prepareSummary(allEntries, users) {
   const byUsers = {}
 
-  for (const { userId, points, originalPoints } of allEntries) {
+  for (const {
+    userId,
+    points,
+    originalPoints,
+    part,
+    timesOnLeaderboard,
+  } of allEntries) {
     if (!byUsers[userId]) {
-      byUsers[userId] = { ptsByDay: [], origPtsByDay: [] }
+      byUsers[userId] = {
+        ptsByDay: [],
+        origPtsByDay: [],
+        timesOnLeaderboard: { 1: 0, 2: 0 },
+      }
     }
 
     byUsers[userId].ptsByDay.push(points)
     byUsers[userId].origPtsByDay.push(originalPoints)
+
+    if (part) {
+      byUsers[userId].timesOnLeaderboard[part]++
+    } else if (timesOnLeaderboard) {
+      byUsers[userId].timesOnLeaderboard[1] += timesOnLeaderboard[1]
+      byUsers[userId].timesOnLeaderboard[2] += timesOnLeaderboard[2]
+    }
   }
 
   const perUsers = []
 
-  for (const [userId, { ptsByDay, origPtsByDay }] of Object.entries(byUsers)) {
+  for (const [
+    userId,
+    { ptsByDay, origPtsByDay, timesOnLeaderboard },
+  ] of Object.entries(byUsers)) {
     const points = ptsByDay.reduce((sum, entry) => sum + entry, 0)
     const originalPoints = origPtsByDay.reduce((sum, entry) => sum + entry, 0)
     perUsers.push({
@@ -48,6 +68,7 @@ export function prepareSummary(allEntries, users) {
       gh: users[userId][1],
       points,
       originalPoints,
+      timesOnLeaderboard,
     })
   }
 

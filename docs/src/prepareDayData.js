@@ -1,6 +1,6 @@
 import { calculateMedian } from "./util.js"
 
-function preparePartData(partData, users, algo) {
+function preparePartData(partData, users, algo, part) {
   const medianTime = calculateMedian(partData.map(([_, sec]) => sec))
 
   const entries = []
@@ -22,6 +22,7 @@ function preparePartData(partData, users, algo) {
       time,
       points,
       originalPoints,
+      part,
     })
   }
 
@@ -35,7 +36,7 @@ export function prepareDayData(yearData, day, algo, users) {
   const dayData = yearData.entries[day]
 
   return {
-    1: preparePartData(dayData["1"] ?? [], users, algo),
-    2: preparePartData(dayData["2"] ?? [], users, algo),
+    1: preparePartData(dayData["1"] ?? [], users, algo, 1),
+    2: preparePartData(dayData["2"] ?? [], users, algo, 2),
   }
 }
