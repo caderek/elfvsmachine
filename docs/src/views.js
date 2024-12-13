@@ -31,7 +31,7 @@ const PartView = ({ data, showDiff }) => {
   return data
     .map((entry) => {
       const gh = entry.gh
-        ? `<a href="https://github.com/${entry.gh}">GH</a>`
+        ? `<a href="https://github.com/${entry.gh}" title="View Github profile">GH</a>`
         : ""
 
       const time = entry.time
@@ -50,7 +50,10 @@ const PartView = ({ data, showDiff }) => {
           <span class="position">${entry.pos}:</span>
           <span class="points">${formatNum(entry.points)}</span>
           ${time}
-          <span class="user"><a class="profile" data-id="${entry.userId}" href="?profile=${entry.userId}">${entry.user}</a> ${gh}</span>
+          <span class="user">
+            <a class="profile" title="View user details" data-id="${entry.userId}" href="?profile=${entry.userId}">
+              ${entry.user}
+            </a> ${gh}</span>
           ${diff}
         </li>
       `
