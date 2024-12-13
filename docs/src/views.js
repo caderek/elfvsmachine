@@ -31,7 +31,7 @@ const PartView = ({ data, showDiff }) => {
   return data
     .map((entry) => {
       const gh = entry.gh
-        ? `<a href="https://github.com/${entry.gh}" title="View Github profile">GH</a>`
+        ? `<a href="https://github.com/${entry.gh}" title="Visit Github profile">GH</a>`
         : ""
 
       const time = entry.time
