@@ -198,7 +198,7 @@ const UserSummary = ({ stats, period, posAdjective }) => {
     ? `
     <header class="user-summary">
       <p>${posAdjective} Position: <strong>#${stats.pos}</strong></p>
-      <p>Total Points: <strong>${stats.points}</strong></p>
+      <p>Total Points: <strong>${formatNum(stats.points)}</strong></p>
     </header>
   `
     : `<p class="user-summary error">Didn't make the leaderboard on any ${period}.</p>`
@@ -217,11 +217,11 @@ const UserDays = ({ stats, year }) => {
         <td><a href="?year=${year}&day=${day}">${day}</a></td>
         <td>${entry[2]?.pos ? `<strong>#${entry[2]?.pos}</strong>` : "-"}</td>
         <td>${entry[2]?.time ? secondsToTime(entry[2].time) : "-"}</td>
-        <td>${entry[2]?.points ?? "-"}</td>
+        <td>${entry[2]?.points ? formatNum(entry[2].points) : "-"}</td>
         <td>${entry[1]?.pos ? `<strong>#${entry[1]?.pos}</strong>` : "-"}</td>
         <td>${entry[1]?.time ? secondsToTime(entry[1].time) : "-"}</td>
-        <td>${entry[1]?.points ?? "-"}</td>
-        <td>${sum || "-"}</td>
+        <td>${entry[1]?.points ? formatNum(entry[1].points) : "-"}</td>
+        <td>${sum ? formatNum(sum) : "-"}</td>
       </tr>`
   })
 
@@ -260,7 +260,7 @@ const UserYears = ({ stats }) => {
       <tr>
         <td><a href="?year=${year}&day=0">${year}</a></td>
         <td>${entry?.pos ? `<strong>#${entry.pos}</strong>` : "-"}</td>
-        <td>${entry?.points ?? "-"}</td>
+        <td>${entry?.points ? formatNum(entry.points) : "-"}</td>
         <td>${entry?.timesOnLeaderboard[2] || "-"}</td>
         <td>${entry?.timesOnLeaderboard[1] || "-"}</td>
       </tr>`
