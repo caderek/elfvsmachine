@@ -1,4 +1,3 @@
-import fs from "node:fs"
 import { fetchAllPriv } from "./actions/fetchAllPriv.js"
 
 const sessionKey = process.argv[2] ?? process.env.AOC_SESSION_KEY ?? null
