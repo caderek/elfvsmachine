@@ -65,8 +65,18 @@ body > div {
   margin: auto;
 }
 
+header {
+  position: relative;
+  margin-bottom: var(--space-m);
+}
+
+header p {
+  font-size: var(--font-s);
+}
+
 h1 {
   font-size: var(--font-2xl);
+  line-height: 1.4;
 }
 
 h2 {

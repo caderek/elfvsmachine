@@ -202,10 +202,10 @@ const UserProfile = ({ info, title }) => {
 const UserSummary = ({ stats, period, posAdjective }) => {
   return stats
     ? `
-    <header class="user-summary">
+    <div class="user-summary">
       <p>${posAdjective} Position: <strong>#${stats.pos}</strong></p>
       <p>Total Points: <strong>${formatNum(stats.points)}</strong></p>
-    </header>
+    </div>
   `
     : `<p class="user-summary error">Didn't make the leaderboard on any ${period}.</p>`
 }
