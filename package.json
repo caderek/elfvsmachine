@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npx @11ty/eleventy-dev-server --dir=docs",
-    "fetch": "node scripts/fetch.js"
+    "fetch": "node scripts/fetch.js",
+    "fetch:priv": "node scripts/fetch-priv.js"
   },
   "type": "module",
   "keywords": ["aoc"],

@@ -3,9 +3,10 @@ import path from "node:path"
 import { JSDOM } from "jsdom"
 
 import { config } from "../../config.js"
+import { fetchPub } from "./util.js"
 
 async function fetchYearStats(year) {
-  const res = await fetch(`https://adventofcode.com/${year}/stats`)
+  const res = await fetchPub(`https://adventofcode.com/${year}/stats`)
 
   if (!res.ok) {
     return null

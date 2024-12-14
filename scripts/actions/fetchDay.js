@@ -1,12 +1,8 @@
 import { JSDOM } from "jsdom"
-
-function getSeconds(result) {
-  const [h, m, s] = result.trim().split(/\s+/).at(-1).split(":").map(Number)
-  return h * 60 * 60 + m * 60 + s
-}
+import { fetchPub, getSeconds } from "./util.js"
 
 export async function fetchDay(year, day) {
-  const res = await fetch(
+  const res = await fetchPub(
     `https://adventofcode.com/${year}/leaderboard/day/${day}`,
   )
 
