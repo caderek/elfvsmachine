@@ -15,7 +15,6 @@ export async function fetchDay(year, day) {
   }
 
   const content = await res.text()
-
   const dom = new JSDOM(content)
 
   const nodes = [...dom.window.document.querySelectorAll("main > *")]

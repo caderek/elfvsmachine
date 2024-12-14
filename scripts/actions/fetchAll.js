@@ -3,6 +3,7 @@ import fs from "node:fs"
 import { config } from "../../config.js"
 import { fetchYear } from "./fetchYear.js"
 import { getCurrent } from "./util.js"
+import { fetchYearsStats } from "./fetchYearStats.js"
 
 export async function fetchAll() {
   const done = fs.existsSync(config.RAW_DATA_DIR)
@@ -30,4 +31,8 @@ export async function fetchAll() {
     const maxDay = year === currentYear ? currentDay : 25
     await fetchYear(year, doneByYear[year] ?? new Set(), maxDay)
   }
+
+  await fetchYearsStats(config.START_FROM_YEAR, currentYear)
+
+  console.log("Done!")
 }

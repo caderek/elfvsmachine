@@ -69,7 +69,10 @@ export const DayView = ({ yearData, day, algo, users }) => {
   return `
     <section class="both-stars" style="${style}">
       <h2>Both Stars on <a href="https://adventofcode.com/${yearData.year}/day/${day}">Day ${day}, ${yearData.year}</a></h2>
-      <p class="median">Median time: <strong>${secondsToTime(Math.round(data[2].medianTime))}</strong></p>
+      <div class="notes">
+        <p>Median time: <strong>${secondsToTime(Math.round(data[2].medianTime))}</strong></p>
+        <p>Finished by <strong>${formatNum(data.stats.both)}</strong> ${data.stats.both === 1 ? "person" : "people"}.</p>
+      </div>
       <ul>
         <li>
           <span class="position">Pos:</span>
@@ -82,7 +85,10 @@ export const DayView = ({ yearData, day, algo, users }) => {
     </section>
     <section class="first-star" style="${style}">
       <h2>First Star on <a href="https://adventofcode.com/${yearData.year}/day/${day}">Day ${day}, ${yearData.year}</a></h2>
-      <p class="median">Median time: <strong>${secondsToTime(Math.round(data[1].medianTime))}</strong></p>
+      <div class="notes">
+        <p>Median time: <strong>${secondsToTime(Math.round(data[1].medianTime))}</strong></p>
+        <p>Finished by <strong>${formatNum(data.stats.first)}</strong> ${data.stats.first === 1 ? "person" : "people"}.</p>
+      </div>
       <ul>
         <li>
           <span class="position">Pos:</span>

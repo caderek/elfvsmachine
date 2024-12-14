@@ -232,12 +232,12 @@ footer .last-update {
   margin-top: var(--space-m);
 }
 
-.median {
+.notes {
   color: var(--color-fg-lc);
   margin-bottom: var(--space-m);
 }
 
-.median strong {
+.notes strong {
   font-weight: 400;
 }
 

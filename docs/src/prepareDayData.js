@@ -38,5 +38,6 @@ export function prepareDayData(yearData, day, algo, users) {
   return {
     1: preparePartData(dayData["1"] ?? [], users, algo, 1),
     2: preparePartData(dayData["2"] ?? [], users, algo, 2),
+    stats: dayData.stats,
   }
 }

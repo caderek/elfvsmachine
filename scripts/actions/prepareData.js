@@ -64,7 +64,16 @@ export function prepareData() {
   fs.mkdirSync(config.DATA_DIR, { recursive: true })
 
   const timestamp = Date.now()
-  const dayFiles = fs.readdirSync(config.RAW_DATA_DIR)
+  const dayFiles = fs
+    .readdirSync(config.RAW_DATA_DIR)
+    .filter((x) => x !== "stats.json")
+
+  const stats = JSON.parse(
+    fs.readFileSync(path.join(config.RAW_DATA_DIR, "stats.json"), {
+      encoding: "utf8",
+    }),
+  )
+
   const byYear = {}
   let allUsers = {}
 
@@ -82,7 +91,10 @@ export function prepareData() {
 
     allUsers = { ...allUsers, ...users }
 
-    byYear[year][day] = results
+    byYear[year][day] = {
+      ...results,
+      stats: stats[year][day],
+    }
   }
 
   const index = {}
